@@ -1,0 +1,12 @@
+{
+    "bundle": {
+        "lib/pigeon.css": [
+            "src/tmp1.css",
+            "src/tmp2.css"
+        ]
+    },
+    
+    "minify": {
+        "lib/pigeon.css": "lib/pigeon.min.css"
+    }
+}
