@@ -3,16 +3,20 @@
 cleanCSS = require 'clean-css'
 colors = require 'colors'
 fs = require 'fs'
+hogan = require 'hogan'
 
 # Paths
 paths =
   buildConfig: './config/build.json'
   header: './config/header.css'
   nodebin: './node_modules/.bin'
+  package: './package.json'
 
-# Build config
-config = JSON.parse fs.readFileSync(paths.buildConfig)
-header = fs.readFileSync paths.header
+# Build package/config
+pkg = JSON.parse fs.readFileSync(paths.package, 'utf8')
+pkg.year = (new Date).getFullYear()
+config = JSON.parse fs.readFileSync(paths.buildConfig, 'utf8')
+header = hogan.compile(fs.readFileSync(paths.header, 'utf8')).render(pkg)
 
 # Bundle CSS
 desc 'This bundles files together'
