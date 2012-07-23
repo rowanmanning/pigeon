@@ -1,0 +1,30 @@
+/*
+ * Nav
+ * ===
+ *
+ * The `nav` class is used to create a horizontal
+ * navigation. It removes list styling and directly
+ * descending list items are floated.
+ *
+ *     <ul class="nav">
+ *         <li>
+ *             <a href="...">Link</a>
+ *         </li>
+ *         ...
+ *     </ul>
+ */
+.nav {
+    padding: 0;
+    list-style: none;
+    zoom: 1; /* hack */
+}
+.nav:before, .nav:after {
+    display: table;
+    content: '';
+}
+.nav:after {
+    clear: both;
+}
+.nav > li {
+    float: left;
+}

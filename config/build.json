@@ -1,8 +1,8 @@
 {
     "bundle": {
         "lib/pigeon.css": [
-            "src/tmp1.css",
-            "src/tmp2.css"
+            "src/nav.css",
+            "src/secret-list.css"
         ]
     },
     
