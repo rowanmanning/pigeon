@@ -3,7 +3,9 @@ Pigeon
 ======
 
 Pigeon is a collection of Object-Oriented CSS classes, useful
-for kick-starting a web project.
+for kick-starting a web project. The project is a bit thin on
+the ground right now, but I'll be adding more objects as I find
+need for them. Feel free to fork and add your own!
 
 
 Development
