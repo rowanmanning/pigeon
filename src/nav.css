@@ -18,11 +18,9 @@
     list-style: none;
     zoom: 1; /* hack */
 }
-.nav:before, .nav:after {
+.nav:after {
     display: table;
     content: '';
-}
-.nav:after {
     clear: both;
 }
 .nav > li {
