@@ -1,6 +1,6 @@
 {
     "name": "pigeon",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Pigeon is a collection of Object-Oriented CSS classes, useful for kick-starting a web project.",
     "homepage": "https://github.com/rowanmanning/pigeon",
     "private": true,
