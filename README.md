@@ -21,6 +21,10 @@ To use Pigeon, simply include `lib/pigeon.css` or
 You can view/use the source for individual objects by digging
 into the CSS files in the `src` directory.
 
+Pigeon doesn't standardise default styles across browser, I'd
+recommend using [normalize.css][normalize] for this (or a CSS
+reset if you have to).
+
 
 Browser Support
 ---------------
@@ -68,4 +72,5 @@ licenses.
 
 [gpl]: http://opensource.org/licenses/gpl-2.0.php
 [mit]: http://opensource.org/licenses/mit-license.php
+[normalize]: http://necolas.github.com/normalize.css/
 [oocss]: https://github.com/stubbornella/oocss
