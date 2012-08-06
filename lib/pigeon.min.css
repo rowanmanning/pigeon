@@ -6,4 +6,4 @@
  * Copyright 2012, Rowan Manning
  * Dual licensed under the MIT or GPL Version 2 licenses.
  */
-.nav{padding:0;list-style:none;zoom:1}.nav:after{display:table;content:'';clear:both}.nav>li{float:left}.secret-list{padding:0;list-style:none}
+.nav{margin-left:0;padding-left:0;list-style:none;zoom:1}.nav:after{display:table;content:'';clear:both}.nav>li{float:left}.secret-list{margin-left:0;padding-left:0;list-style:none}

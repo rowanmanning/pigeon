@@ -23,7 +23,8 @@
  *     </ul>
  */
 .nav {
-    padding: 0;
+    margin-left: 0;
+    padding-left: 0;
     list-style: none;
     zoom: 1; /* hack */
 }
@@ -52,6 +53,7 @@
  *     </ul>
  */
 .secret-list {
-    padding: 0;
+    margin-left: 0;
+    padding-left: 0;
     list-style: none;
 }
