@@ -11,6 +11,26 @@
   color: grey;
 }
 
+/* Clearfix
+ * ========
+ *
+ * The `clearfix` class is used simply to clear floats.
+ *
+ *     <div class="clearfix">
+ *         <div style="float: left;"> ... </div>
+ *     </div>
+ */
+.clearfix, .nav {
+  zoom: 1;
+}
+.clearfix:before, .nav:before, .clearfix:after, .nav:after {
+  display: table;
+  content: "";
+}
+.clearfix:after, .nav:after {
+  clear: both;
+}
+
 /* Nav
  * ===
  *
@@ -29,12 +49,6 @@
   margin-left: 0;
   padding-left: 0;
   list-style: none;
-  zoom: 1;
-}
-.nav:after {
-  display: table;
-  content: "";
-  clear: both;
 }
 .nav > li {
   float: left;

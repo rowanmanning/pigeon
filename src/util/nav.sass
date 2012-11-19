@@ -16,15 +16,11 @@
  */
  
 .nav
+  @include clearfix
+
   margin-left: 0
   padding-left: 0
   list-style: none
-  zoom: 1 /* hack */
-
-  &:after
-    display: table
-    content: ''
-    clear: both
 
   > li
     float: left

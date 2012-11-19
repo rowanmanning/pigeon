@@ -1,0 +1,31 @@
+
+/*
+ * Clearfix
+ * ========
+ *
+ * The `clearfix` class is used simply to clear floats.
+ *
+ *     <div class="clearfix">
+ *         <div style="float: left;"> ... </div>
+ *     </div>
+ */
+
+.clearfix
+  zoom: 1
+
+  &:before, &:after
+    display: table
+    content: ''
+
+  &:after
+    clear: both
+
+
+// Clearfix Mixin
+// ==============
+//
+// The `clearfix` mixin uses a sneaky way of extending across files.
+// Use this mixin to add `clearfix` class functionality to another class.
+
+@mixin clearfix
+  @extend .clearfix

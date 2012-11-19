@@ -7,4 +7,4 @@
  * Dual licensed under the MIT or GPL Version 2 licenses.
  */
 
-.pigeon{color:grey}.nav{margin-left:0;padding-left:0;list-style:none;zoom:1}.nav:after{display:table;content:"";clear:both}.nav>li{float:left}.secret-list{margin-left:0;padding-left:0;list-style:none}
+.pigeon{color:grey}.clearfix,.nav{zoom:1}.clearfix:before,.nav:before,.clearfix:after,.nav:after{display:table;content:""}.clearfix:after,.nav:after{clear:both}.nav{margin-left:0;padding-left:0;list-style:none}.nav>li{float:left}.secret-list{margin-left:0;padding-left:0;list-style:none}
