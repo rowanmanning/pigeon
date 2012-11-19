@@ -1,5 +1,5 @@
 /*
- * Pigeon v0.1.2
+ * Pigeon v0.2.0
  *
  * https://github.com/rowanmanning/pigeon
  *
@@ -7,8 +7,11 @@
  * Dual licensed under the MIT or GPL Version 2 licenses.
  */
 
-/*
- * Nav
+.pigeon {
+  color: grey;
+}
+
+/* Nav
  * ===
  *
  * The `nav` class is used to create a horizontal
@@ -23,22 +26,21 @@
  *     </ul>
  */
 .nav {
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
-    zoom: 1; /* hack */
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  zoom: 1;
 }
 .nav:after {
-    display: table;
-    content: '';
-    clear: both;
+  display: table;
+  content: "";
+  clear: both;
 }
 .nav > li {
-    float: left;
+  float: left;
 }
 
-/*
- * Secret List
+/* Secret List
  * ===========
  *
  * The `secret-list` class is used to hide the default
@@ -53,7 +55,7 @@
  *     </ul>
  */
 .secret-list {
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
 }

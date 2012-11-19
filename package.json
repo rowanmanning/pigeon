@@ -1,7 +1,7 @@
 {
     "name": "pigeon",
-    "version": "0.1.2",
-    "description": "Pigeon is a collection of Object-Oriented CSS classes, useful for kick-starting a web project.",
+    "version": "0.2.0",
+    "description": "Pigeon is an OOCSS framework for rapid prototyping or building simple, minimalist websites.",
     "homepage": "https://github.com/rowanmanning/pigeon",
     "private": true,
 
@@ -15,11 +15,5 @@
     "author": {
         "name": "Rowan Manning",
         "url": "http://rowanmanning.co.uk/"
-    },
-
-    "devDependencies": {
-        "clean-css": "0.4.x",
-        "colors": "0.6.0-1",
-        "hogan": "1.0.5-dev"
     }
 }

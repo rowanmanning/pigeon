@@ -1,3 +1,4 @@
+
 /*
  * Nav
  * ===
@@ -13,17 +14,17 @@
  *         ...
  *     </ul>
  */
-.nav {
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
-    zoom: 1; /* hack */
-}
-.nav:after {
-    display: table;
-    content: '';
-    clear: both;
-}
-.nav > li {
-    float: left;
-}
+ 
+.nav
+  margin-left: 0
+  padding-left: 0
+  list-style: none
+  zoom: 1 /* hack */
+
+  &:after
+    display: table
+    content: ''
+    clear: both
+
+  > li
+    float: left
