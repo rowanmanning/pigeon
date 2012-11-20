@@ -2,7 +2,7 @@
 Pigeon
 ======
 
-Pigeon is an OOCSS framework for rapid prototyping or building simple, minimalist websites.
+Pigeon is an OOCSS framework for rapid prototyping or building simple, minimalist websites. Not all pigeons are scruffy...
 
 
 Usage
