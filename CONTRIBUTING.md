@@ -109,4 +109,6 @@ Please follow this process; it's the best way to get your work included in the p
 If you have any other questions about contributing, please feel free to contact me.
 
 
+------------------------------------------------------------
+
 Thanks to Nicolas Gallagher for his useful [issue guidelines](https://github.com/necolas/issue-guidelines), which where used as a basis for this document.
