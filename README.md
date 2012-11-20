@@ -10,7 +10,7 @@ Usage
 
 To use Pigeon, simply include `dist/pigeon.css` or `dist/pigeon.min.css` in your project.
 
-You can view/use the source for individual objects by digging into the CSS files in the `src` directory.
+You can view/use the source for individual objects by digging into the CSS files in the `src` directory, or you can import `src/pigeon.scss` directly.
 
 Pigeon doesn't standardise default styles across browser, I'd recommend using [normalize.css][normalize] for this (or a CSS reset if you have to).
 

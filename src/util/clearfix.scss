@@ -1,6 +1,5 @@
 
-/*
- * Clearfix
+/* Clearfix
  * ========
  *
  * The `clearfix` class is used simply to clear floats.
@@ -10,12 +9,15 @@
  *     </div>
  */
 
-.clearfix
-  zoom: 1
+.clearfix {
+    zoom: 1;
 
-  &:before, &:after
-    display: table
-    content: ''
-
-  &:after
-    clear: both
+    &:before, &:after {
+        display: table;
+        content: "";
+    }
+    
+    &:after {
+        clear: both;
+    }
+}
