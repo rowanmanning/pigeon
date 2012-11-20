@@ -15,6 +15,6 @@
         "url": "http://rowanmanning.co.uk/"
     },
 
-    "main": ["src/pigeon.scss", "./dist/pigeon.css"],
+    "main": ["./lib/pigeon.scss", "./dist/pigeon.css"],
     "dependencies": {}
 }
