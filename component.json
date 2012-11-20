@@ -2,8 +2,6 @@
     "name": "pigeon",
     "version": "0.2.0",
     "description": "Pigeon is an OOCSS framework for rapid prototyping or building simple, minimalist websites.",
-    "homepage": "https://github.com/rowanmanning/pigeon",
-    "private": true,
 
     "homepage": "https://github.com/rowanmanning/pigeon",
     "repository": {
@@ -15,5 +13,8 @@
     "author": {
         "name": "Rowan Manning",
         "url": "http://rowanmanning.co.uk/"
-    }
+    },
+
+    "main": ["src/pigeon.scss", "./dist/pigeon.css"],
+    "dependencies": {}
 }

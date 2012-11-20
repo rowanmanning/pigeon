@@ -14,6 +14,8 @@ You can view/use the source for individual objects by digging into the CSS files
 
 Pigeon doesn't standardise default styles across browser, I'd recommend using [normalize.css][normalize] for this (or a CSS reset if you have to).
 
+Pigeon is available through [Bower][bower]: `bower install pigeon`.
+
 
 Browser Support
 ---------------
@@ -42,6 +44,7 @@ Dual licensed under the [MIT][mit] or [GPL Version 2][gpl] licenses.
 
 
 
+[bower]: http://twitter.github.com/bower/
 [gpl]: http://opensource.org/licenses/gpl-2.0.php
 [mit]: http://opensource.org/licenses/mit-license.php
 [normalize]: http://necolas.github.com/normalize.css/
