@@ -1,0 +1,29 @@
+
+<h3>Objects</h3>
+
+<ul>
+    {% for doc in site.pages %}
+        {% if doc.url contains '/docs/object' %}
+            <li>
+                <a href="{{ doc.url | remove: 'index.html' }}">
+                    {{ doc.title | remove: ' - Pigeon Docs' }}
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+
+<h3>Core Styles</h3>
+
+<ul>
+    {% for doc in site.pages %}
+        {% if doc.url contains '/docs/core' %}
+            <li>
+                <a href="{{ doc.url | remove: 'index.html' }}">
+                    {{ doc.title | remove: ' - Pigeon Docs' }}
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

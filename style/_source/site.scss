@@ -1,0 +1,21 @@
+
+// Variables: colour
+$c-cream: #fffaf5;
+$c-cream-dk: #eadbcd;
+$c-lilac: #cae;
+$c-lilac-dk: #7f629c;
+$c-blue: #9cf;
+$c-blue-dk: #4781ba;
+$c-grey: #747474;
+$c-grey-dk: #333;
+
+// Pigeon config
+$pigeon-type-face-heading: "Varela Round", Verdana, Geneva, Tahoma, sans-serif;
+
+// Vendor styles
+@import "vendor/necolas/normalize";
+@import "vendor/rowanmanning/pigeon/lib/pigeon";
+
+// Site styles
+@import "site/layout.scss";
+@import "site/glitter.scss";

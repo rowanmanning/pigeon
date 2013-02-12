@@ -1,0 +1,3 @@
+[submodule "style/_source/vendor/rowanmanning/pigeon"]
+	path = style/_source/vendor/rowanmanning/pigeon
+	url = git://github.com/rowanmanning/pigeon.git

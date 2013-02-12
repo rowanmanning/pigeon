@@ -1,0 +1,24 @@
+
+# Jekyll config
+auto: true
+exclude:
+  - CNAME
+  - Makefile
+  - README.md
+lsi: false
+pygments: true
+safe: true
+server: true
+
+# Site details
+lang: en-GB
+host: pigeon.rowanmanning.com
+tld: rowanmanning.com
+
+# Author details
+author:
+  name: Rowan Manning
+  url: http://rowanmanning.com/
+
+# Tracking info
+ga: UA-32567673-1

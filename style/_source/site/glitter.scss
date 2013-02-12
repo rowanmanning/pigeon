@@ -1,0 +1,27 @@
+
+// Make things noisy
+%noisy {
+    background-image: url("assets/100-65-5.png");
+}
+
+// Main container styles
+html {
+    @extend %noisy;
+    min-height: 100%;
+    background-color: $c-cream;
+}
+%before-bar {
+    content: "";
+    height: 10px;
+    display: block;
+}
+body:before {
+    @extend %before-bar;
+    @extend %noisy;
+    background-color: $c-lilac-dk;
+}
+.wrapper:before {
+    @extend %before-bar;
+    @extend %noisy;
+    background-color: $c-lilac;
+}
