@@ -1,0 +1,36 @@
+
+/*
+ * Space object
+ * ------------
+ *
+ * Adds typographic spacing to an element.
+ *
+ *     <div class="space"> ... </div>
+ *     <p> ... </p>
+ */
+.space {
+    display: block;
+    @include rem("margin-bottom", $pigeon-type-line-height);
+}
+.space-dbl {
+    @extend .space;
+    @include rem("margin-bottom", ($pigeon-type-line-height * 2));
+}
+
+/**
+ * Space Above object
+ * ------------------
+ *
+ * Adds typographic spacing to the top of an element.
+ *
+ *     <p class="space-above"> ... </p>
+ *     <p> ... </p>
+ */
+.space-above {
+    display: block;
+    @include rem("margin-top", $pigeon-type-line-height);
+}
+.space-above-dbl {
+    @extend .space-above;
+    @include rem("margin-top", ($pigeon-type-line-height * 2));
+}

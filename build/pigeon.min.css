@@ -1,4 +1,4 @@
-/*
+@charset "UTF-8";/*
  * Pigeon 0.0.0
  *
  * Pigeon is an OOCSS framework for rapid prototyping and building
@@ -7,4 +7,4 @@
  * Copyright 2013, Rowan Manning.
  * Licensed under the MIT license.
  * 
- */.pigeon{color:grey}
+ */.clearfix{zoom:1}.clearfix:before,.clearfix:after{display:table;content:''}.clearfix:after{clear:both}.cramp{margin-top:0;margin-bottom:0}.quote,blockquote{margin-left:0;margin-right:0;padding-left:22px;padding-left:2.2rem}.quote-body{margin-top:0;margin-bottom:0}.quote-attrib{font-size:16px;font-size:1.6rem;line-height:20px;line-height:2rem;font-style:italic}.quote-attrib:before{content:"—"}.smallprint,figcaption,small,sub,sup{font-size:16px;font-size:1.6rem;line-height:20px;line-height:2rem}.space,.space-dbl,p,h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1,blockquote,dl,figure,ol,ul,hr,pre,table{display:block;margin-bottom:22px;margin-bottom:2.2rem}.space-dbl{margin-bottom:44px;margin-bottom:4.4rem}.space-above,.space-above-dbl{display:block;margin-top:22px;margin-top:2.2rem}.space-above-dbl{margin-top:44px;margin-top:4.4rem}.textbox{display:block;padding-top:22px;padding-top:2.2rem}html{font-size:62.5%}body{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-size:1.8rem;line-height:22px;line-height:2.2rem}p,h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1,blockquote,dl,figure,ol,ul,hr,pre,table{margin-top:0}h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1,dt,th{font-family:Arial,Helvetica,sans-serif;font-weight:normal}h6{font-size:20px;font-size:2rem;line-height:24px;line-height:2.4rem}h5{font-size:22px;font-size:2.2rem;line-height:26px;line-height:2.6rem}h4{font-size:25px;font-size:2.5rem;line-height:29px;line-height:2.9rem}h3{font-size:28px;font-size:2.8rem;line-height:32px;line-height:3.2rem}h2{font-size:32px;font-size:3.2rem;line-height:36px;line-height:3.6rem}h1{font-size:36px;font-size:3.6rem;line-height:40px;line-height:4rem}cite{font-style:italic}q{font-style:italic}q:before{content:"“"}q:after{content:"”"}ol,ul{padding-left:44px;padding-left:4.4rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0;padding-left:22px;padding-left:2.2rem}dt{font-weight:bold}dd{margin-left:0;margin-bottom:11px;margin-bottom:1.1rem;padding-left:22px;padding-left:2.2rem}table{max-width:100%}th{text-align:left}th,td{padding:3px 9px;padding: 0.3rem 0.9rem}

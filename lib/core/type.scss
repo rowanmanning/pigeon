@@ -1,0 +1,74 @@
+
+/* Base typography */
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: $pigeon-type-face;
+    @include pigeon-type-scale(0);
+}
+
+
+/* Standard element typography */
+
+p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
+blockquote, dl, figure, ol, ul, hr, pre, table {
+    @extend .space;
+    margin-top: 0;
+}
+
+
+/* Heading typography */
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, dt, th {
+    font-family: $pigeon-type-face-heading;
+    font-weight: $pigeon-type-weight-heading;
+}
+
+h6 {
+    @include pigeon-type-scale(1);
+}
+
+h5 {
+    @include pigeon-type-scale(2);
+}
+
+h4 {
+    @include pigeon-type-scale(3);
+}
+
+h3 {
+    @include pigeon-type-scale(4);
+}
+
+h2 {
+    @include pigeon-type-scale(5);
+}
+
+h1 {
+    @include pigeon-type-scale(6);
+}
+
+
+/* Text-level semantics */
+
+cite {
+    font-style: italic;
+}
+
+figcaption, small, sub, sup {
+    @extend .smallprint;
+}
+
+q {
+    font-style: italic;
+
+    &:before {
+        content: "“";
+    }
+
+    &:after {
+        content: "”";
+    }
+}

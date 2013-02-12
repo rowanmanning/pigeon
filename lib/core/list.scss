@@ -1,0 +1,21 @@
+
+/* Lists */
+
+ol, ul {
+    @include rem("padding-left", ($pigeon-type-line-height * 2));
+
+    ol, ul {
+        margin-bottom: 0;
+        @include rem("padding-left", $pigeon-type-line-height);
+    }
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+    @include rem("margin-bottom", ($pigeon-type-line-height / 2));
+    @include rem("padding-left", $pigeon-type-line-height);
+}

@@ -1,0 +1,12 @@
+
+/*
+ * Smallprint object
+ * -----------------
+ *
+ * Reduce type size of an element to indicate small-print.
+ *
+ *     <p class="smallprint"> ... </p>
+ */
+.smallprint {
+    @include pigeon-type-scale(-1);
+}

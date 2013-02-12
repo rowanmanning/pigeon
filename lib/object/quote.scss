@@ -1,0 +1,29 @@
+
+/*
+ * Quote object
+ * ------------
+ *
+ * Style a quote.
+ *
+ *     <blockquote class="quote">
+ *         <p class="quote-body"> ... </p>
+ *         <p class="quote-attrib">Someone in <cite>Work</cite></p>
+ *     </blockquote>
+ */
+.quote {
+    margin-left: 0;
+    margin-right: 0;
+    @include rem("padding-left", $pigeon-type-line-height);
+}
+.quote-body {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.quote-attrib {
+    @include pigeon-type-scale(-1);
+    font-style: italic;
+
+    &:before {
+        content: "—";
+    }
+}

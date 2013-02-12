@@ -1,0 +1,26 @@
+
+// Accumulating Incrementor
+// ------------------------
+// 
+// Increment a value accumulatively (todo: explain this properly)
+@function pigeon-accum-inc ($value, $incrementor, $accumulator, $scale) {
+
+    // Calculate size (positive)
+    @if $scale >= 0 {
+        @for $i from 1 through $scale {
+            $value: $value + floor($incrementor);
+            $incrementor: $incrementor + $accumulator;
+        }
+    }
+
+    // Calculate size (negative)
+    @else {
+        @for $i from $scale through -1 {
+            $value: $value - floor($incrementor);
+            $incrementor: $incrementor + $accumulator;
+        }
+    }
+
+    // Return
+    @return $value;
+}

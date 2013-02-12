@@ -1,0 +1,24 @@
+
+/*
+ * Clearfix object
+ * ---------------
+ *
+ * Used to clear floats in a container.
+ *
+ *     <ul class="clearfix">
+ *         <li style="float: left;"> ... </li>
+ *         <li style="float: left;"> ... </li>
+ *     </ul>
+ */
+.clearfix {
+    zoom: 1;
+
+    &:before, &:after {
+        display: table;
+        content: '';
+    }
+    
+    &:after {
+        clear: both;
+    }
+}
