@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+
+    <meta charset="utf-8"/>
+    <title>Style Testing</title>
+
+    <link rel="stylesheet" href="../lib/vendor/necolas/normalize.scss"/>
+    <link rel="stylesheet" href="../build/pigeon.css"/>
+    <style>
+        body {
+            padding: 40px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <h1>Style Testing</h1>
+
+    <p>
+        This page is built with <a href="https://github.com/rowanmanning/frame">Frame</a>. Frame is
+        a light-weight HTML scaffold for you to test your stylesheets against. That's all, just a
+        HTML document with lots of elements. It's useful! The person who's using this doesn't have
+        to keep this paragraph – it's jolly nice of them to have left it here :)
+    </p>
+
+    <hr/>
+
+
+    <h2 class="space-above-dbl">Text-Level Semantics</h2>
+
+    <p>
+        The <code>strong</code> and <code>b</code> elements look similar but have different
+        purposes: <code>strong</code> is used to indicate important text and <code>b</code> is used
+        to offset text from its surroundings with no additional importance inferred. E.g.
+        <strong>strong</strong> and <b>b</b>.
+    </p>
+
+    <p>
+        The <code>em</code> and <code>i</code> elements look similar but have different purposes:
+        <code>em</code> is used to indicate emphasised text where the emphasis is important to the
+        meaning of the text and <code>i</code> is used (odd, I know) to indicate that the text may
+        be spoken with an inflection but bears no extra importance. E.g. <em>em</em> and <i>i</i>.
+    </p>
+
+    <p>
+        The <code>sub</code> and <code>sup</code> elements do just what they say on the tin: mark up
+        subscript/superscript. E.g. <sub>sub</sub> and <sup>sup</sup>.
+    </p>
+
+    <p>
+        The <code>abbr</code> element is used to mark up abbreviations, and is expected to have a
+        <code>title</code> attribute. E.g. <abbr title="abbreviation">abbr</abbr>.
+    </p>
+
+    <p>
+        The <code>del</code> and <code>ins</code> elements are used to mark up text that has been
+        removed from the document or inserted after it was published. E.g. <del>deleted</del>
+        <ins>inserted</ins>. The <code>s</code> element is subtly different from <code>del</code> –
+        it is used to indicate that information is no longer accurate or relevant.
+        E.g. <s>strike</s>.
+    </p>
+
+    <p>
+        The <code>cite</code> element should wrap the content of an anchor which links to a cited
+        source. E.g. <a href="http://csswizardry.com/2011/01/html5-and-text-level-semantics/"><cite>see this article</cite></a>
+    </p>
+
+    <p>
+        The <code>q</code> element is used to mark up inline quotations. E.g. <q>Hello World!</q>.
+    </p>
+
+    <p>
+        The <code>mark</code> element is used to highlight text, often search terms. E.g. You
+        searched for <mark>kittens</mark>.
+    </p>
+
+    <p>
+        The <code>small</code> element is used to represent small print and side comments. E.g.
+        No kittens were harmed in the making of this website*
+        <br/>
+        <br/>
+        <small>* Maybe</small>
+    </p>
+
+    <hr/>
+
+
+    <h2 class="space-above-dbl">Headings</h2>
+
+    <h1>Level 1 Heading</h1>
+
+    <p>This is a paragraph after a level 1 heading.</p>
+
+    <h2>Level 2 Heading</h2>
+
+    <p>This is a paragraph after a level 2 heading.</p>
+
+    <h3>Level 3 Heading</h3>
+
+    <p>This is a paragraph after a level 3 heading.</p>
+
+    <h4>Level 4 Heading</h4>
+
+    <p>This is a paragraph after a level 4 heading.</p>
+
+    <h5>Level 5 Heading</h5>
+
+    <p>This is a paragraph after a level 5 heading.</p>
+
+    <h6>Level 6 Heading</h6>
+
+    <p>This is a paragraph after a level 6 heading.</p>
+
+    <hr/>
+
+
+    <h2 class="space-above-dbl">Links</h2>
+
+    <p>
+        <a href="">This is a local/relative link<a>, whereas
+        <a href="http://www.google.com/">this is an external link</a>.
+    </p>
+
+    <p>
+        Visited links should nearly always look different to unvisited links:
+    </p>
+
+    <ul>
+        <li><a href="#1">Here's a bunch</a></li>
+        <li><a href="#2">of links</a></li>
+        <li><a href="#3">to make it</a></li>
+        <li><a href="#4">easier to compare</a></li>
+        <li><a href="#5">regular and <code>:visited</code> styles</a></li>
+        <li><a href="#6">(don't click them all!)</a></li>
+    </ul>
+
+    <hr/>
+
+
+    <h2 class="space-above-dbl">Unordered Lists</h2>
+
+    <p>
+        <code>ul</code> elements should be used when the order of the list items is not important or
+        has no meaning, e.g. a shopping list. They look like this:
+    </p>
+
+    <ul>
+        <li>Meat</li>
+        <li>
+            Vegetables
+            <ul>
+                <li>Potatoes</li>
+                <li>Carrots</li>
+                <li>Peas</li>
+            </ul>
+        </li>
+        <li>
+            Fruit
+            <ul>
+                <li>Apples</li>
+                <li>Bananas</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Ordered Lists</h2>
+
+    <p>
+        <code>ol</code> elements should be used when the order of the list items is important, and the
+        list items would make no sense when reordered, e.g. a recipe. They look like this:
+    </p>
+
+    <ol>
+        <li>Open tin of beans</li>
+        <li>
+            Cook beans
+            <ol>
+                <li>Empty beans into pan or microwave-safe container</li>
+                <li>Put on hob or in microwave</li>
+                <li>Cook for a few minutes</li>
+            </ol>
+        </li>
+        <li>
+            Make toast
+            <ol>
+                <li>Place bread in toaster and cook</li>
+                <li>Butter toasted bread</li>
+            </ol>
+        </li>
+        <li>Put beans on toast</li>
+    </ol>
+
+    <h2>Description Lists</h2>
+
+    <p>
+        <code>dl</code> elements should be used when the list contains items with a clear
+        title/description. E.g. a list of books/reviews. Because <code>dt</code> and <code>dd</code>
+        elements do not share a common parent, it can be difficult to use description lists for
+        complex data. In this case, using a <code>ul</code> is sometimes considered acceptable.
+        Description lists look like this:
+    </p>
+
+    <dl>
+        <dt>Don't Make Me Think!</dt>
+        <dd>
+            A common sense approach to web usability.
+            <a href="http://www.amazon.co.uk/Dont-Make-Me-Think-Usability/dp/0321344758">Buy this book</a>
+        </dd>
+
+        <dt>JavaScript: The Good Parts</dt>
+        <dd>
+            Most programming languages contain good and bad parts, but JavaScript has more than its
+            share of the bad. This book scrapes away these bad features to reveal a subset of JavaScript
+            that's more reliable, readable, and maintainable.
+            <a href="http://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742">Buy this book</a>
+        </dd>
+
+        <dt>Designing with Progressive Enhancement</dt>
+        <dd>
+            This book is a practical guide to understanding the principles and benefits of progressive
+            enhancement.
+            <a href="http://www.amazon.co.uk/Designing-Progressive-Enhancement-Building-Everyone/dp/0321658884">Buy this book</a>
+        </dd>
+    </dl>
+
+    <hr/>
+
+
+    <h2 class="space-above-dbl">Block Quotes</h2>
+
+    <blockquote class="quote">
+        <p class="quote-body">
+            Block quotes can be used to quote somebody.
+        </p>
+        <p class="quote-attrib">Rowan Manning</p>
+    </blockquote>
+
+    <p>
+        the <code>cite</code> element in block quotes can be used to mark up the source of the
+        quote. Depending on its usefulness, the citation can be wrapped in an anchor.
+    </p>
+
+    <blockquote class="quote">
+        <p class="quote-body">
+            Block quotes can also have a citation!
+        </p>
+        <p class="quote-attrib">Rowan Manning on <cite>this page</cite></p>
+    </blockquote>
+
+    <hr/>
+
+
+    <h2 class="space-above-dbl">Code</h2>
+
+    <p>
+        As well as the <code>code</code> element being usable inline, often it is used in
+        conjunction with the <code>pre</code> element. This allows marking up of larger blocks of
+        code:
+    </p>
+
+    <pre><code>sayMessage = (msg) -&gt; alert "Scaffold says: #{ msg }"
+sayHello = (to) -&gt; sayMessage "Hello #{ to }!"
+
+sayHello 'Reader'
+sayMessage 'Code blocks can be useful.'
+</code></pre>
+
+    <hr/>
+
+    <h2 class="space-above-dbl">Tables</h2>
+
+    <p>
+        Tables are still supposed to be used for marking up tabular data!
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cell content</td>
+                <td>Cell content</td>
+                <td>Cell content</td>
+            </tr>
+            <tr>
+                <td>Cell content</td>
+                <td>Cell content</td>
+                <td>Cell content</td>
+            </tr>
+            <tr>
+                <td>Cell content</td>
+                <td>Cell content</td>
+                <td>Cell content</td>
+            </tr>
+            <tr>
+                <td>Cell content</td>
+                <td>Cell content</td>
+                <td>Cell content</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
