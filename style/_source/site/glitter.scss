@@ -1,9 +1,4 @@
 
-// Make things noisy
-%noisy {
-    background-image: url("assets/100-65-5.png");
-}
-
 // Main container styles
 html {
     @extend %noisy;

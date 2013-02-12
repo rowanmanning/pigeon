@@ -1,0 +1,35 @@
+// object/swatch
+
+// Swatch styles
+.swatches {
+    clear: both;
+}
+.swatch {
+    @extend %noisy;
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: solid 10px #fff;
+}
+.sw1 {
+    background-color: $c-cream;
+}
+.sw2 {
+    background-color: $c-cream-dk;
+}
+.sw3 {
+    background-color: $c-lilac;
+}
+.sw4 {
+    background-color: $c-lilac-dk;
+}
+.sw5 {
+    background-color: $c-blue;
+}
+.sw6 {
+    background-color: $c-blue-dk;
+}

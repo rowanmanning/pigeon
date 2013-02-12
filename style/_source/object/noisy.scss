@@ -1,0 +1,9 @@
+// object/noisy
+
+// Make things noisy
+%noisy {
+    background-image: url("assets/100-65-5.png");
+}
+.noisy {
+    @extend %noisy;
+}

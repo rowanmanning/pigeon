@@ -5,19 +5,16 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="page">
+        <div class="grid page">
 
-            <ul class="nav">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/docs/">Documentation</a>
-                </li>
-            </ul>
+            <div class="col ca-12 cb-4 cc-3">
+                {% include header.html %}
+            </div>
 
-            {{ content }}
-            
+            <div class="col ca-12 cb-8 cc-9">
+                {{ content }}
+            </div>
+
         </div>
     </div>
 </body>
