@@ -102,9 +102,8 @@
  *     <div class="space"> ... </div>
  *     <p> ... </p>
  */
-.space, .space-dbl, p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
+.space, p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
 blockquote, dl, figure, ol, ul, hr, pre, table {
-  display: block;
   margin-bottom: 22px;
   margin-bottom: 2.2rem;
 }
@@ -123,8 +122,7 @@ blockquote, dl, figure, ol, ul, hr, pre, table {
  *     <p class="space-above"> ... </p>
  *     <p> ... </p>
  */
-.space-above, .space-above-dbl {
-  display: block;
+.space-above {
   margin-top: 22px;
   margin-top: 2.2rem;
 }
@@ -132,6 +130,42 @@ blockquote, dl, figure, ol, ul, hr, pre, table {
 .space-above-dbl {
   margin-top: 44px;
   margin-top: 4.4rem;
+}
+
+/*
+ * Table object
+ * ------------
+ *
+ * Style a table.
+ *
+ *     <table class="table">
+ *         ...
+ *     </table>
+ */
+.table {
+  border-top: 1px solid #bbbbbb;
+  border-left: 1px solid #bbbbbb;
+}
+.table th {
+  background-color: #d6d6d6;
+}
+.table td, .table th {
+  border-bottom: 1px solid #bbbbbb;
+  border-right: 1px solid #bbbbbb;
+}
+
+/*
+ * Striped Table object
+ * --------------------
+ *
+ * Style a table with alternating row colours.
+ *
+ *     <table class="table table-stripe">
+ *         ...
+ *     </table>
+ */
+.table-stripe tr:nth-child(2n) td {
+  background-color: #eee;
 }
 
 /*
@@ -277,9 +311,10 @@ table {
 
 th {
   text-align: left;
+  font-weight: bold;
 }
 
 th, td {
-  padding: 3px 9px;
-  padding:  0.3rem 0.9rem;
+  padding: 5px 9px;
+  padding:  0.5rem 0.9rem;
 }

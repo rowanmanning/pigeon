@@ -1,0 +1,41 @@
+
+/*
+ * Table object
+ * ------------
+ *
+ * Style a table.
+ *
+ *     <table class="table">
+ *         ...
+ *     </table>
+ */
+.table {
+    $border: 1px solid #bbb;
+    border-top: $border;
+    border-left: $border;
+
+    th {
+        background-color: #d6d6d6;
+    }
+
+    td, th {
+        border-bottom: $border;
+        border-right: $border;
+    }
+}
+
+/*
+ * Striped Table object
+ * --------------------
+ *
+ * Style a table with alternating row colours.
+ *
+ *     <table class="table table-stripe">
+ *         ...
+ *     </table>
+ */
+.table-stripe {
+    tr:nth-child(2n) td {
+        background-color: #eee;
+    }
+}
