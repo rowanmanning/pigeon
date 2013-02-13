@@ -162,6 +162,7 @@ body {
   font-size: 1.8rem;
   line-height: 22px;
   line-height: 2.2rem;
+  color: #333333;
 }
 
 /* Standard element typography */
@@ -218,9 +219,21 @@ h1 {
   line-height: 4rem;
 }
 
+/* Links */
+a {
+  color: #4781ba;
+}
+a:visited {
+  color: #7f629c;
+}
+
 /* Text-level semantics */
 cite {
   font-style: italic;
+}
+
+mark {
+  background-color: #ffff99;
 }
 
 q {
