@@ -120,7 +120,7 @@
     <h2 class="space-above-dbl">Links</h2>
 
     <p>
-        <a href="">This is a local/relative link<a>, whereas
+        <a href="">This is a local/relative link</a>, whereas
         <a href="http://www.google.com/">this is an external link</a>.
     </p>
 
@@ -261,12 +261,11 @@
         code:
     </p>
 
-    <pre><code>sayMessage = (msg) -&gt; alert "Scaffold says: #{ msg }"
-sayHello = (to) -&gt; sayMessage "Hello #{ to }!"
+    <pre><code>function sayHelloTo (name) {
+    alert('Hello ' + name + '!');
+}
 
-sayHello 'Reader'
-sayMessage 'Code blocks can be useful.'
-</code></pre>
+sayHelloTo('World');</code></pre>
 
     <hr/>
 
@@ -276,34 +275,77 @@ sayMessage 'Code blocks can be useful.'
         Tables are still supposed to be used for marking up tabular data!
     </p>
 
-    <table class="table table-stripe">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>Green</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>Yellow</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>Orange</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>This is a table with a head/body/foot</caption>
         <thead>
             <tr>
-                <th>Table Heading</th>
-                <th>Table Heading</th>
-                <th>Table Heading</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Calories</th>
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Total</th>
+                <td>249.3</td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
-                <td>Cell content</td>
-                <td>Cell content</td>
-                <td>Cell content</td>
+                <td>Apple</td>
+                <td>Green</td>
+                <td>53</td>
             </tr>
             <tr>
-                <td>Cell content</td>
-                <td>Cell content</td>
-                <td>Cell content</td>
+                <td>Banana</td>
+                <td>Yellow</td>
+                <td>96.9</td>
             </tr>
             <tr>
-                <td>Cell content</td>
-                <td>Cell content</td>
-                <td>Cell content</td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>99.4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>This is a row-based table</caption>
+        <colgroup>
+            <col/>
+            <col span="2"/>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th scope="row">Name</th>
+                <td>Apple</td>
+                <td>Banana</td>
+                <td>Orange</td>
             </tr>
             <tr>
-                <td>Cell content</td>
-                <td>Cell content</td>
-                <td>Cell content</td>
+                <th scope="row">Color</th>
+                <td>Green</td>
+                <td>Yellow</td>
+                <td>Orange</td>
             </tr>
         </tbody>
     </table>
