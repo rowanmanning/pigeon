@@ -10,17 +10,23 @@
  *     </table>
  */
 .table {
-    $border: 1px solid #bbb;
-    border-top: $border;
-    border-left: $border;
+    $border: 1px solid $pigeon-table-color-border;
+    border-bottom: $border;
+    border-right: $border;
 
     th {
-        background-color: #d6d6d6;
+        background-color: $pigeon-table-color-header;
     }
 
     td, th {
-        border-bottom: $border;
-        border-right: $border;
+        border-top: $border;
+        border-left: $border;
+    }
+
+    tfoot {
+        td, th {
+            border-top: 2px solid $pigeon-table-color-border;
+        }
     }
 }
 
@@ -34,8 +40,7 @@
  *         ...
  *     </table>
  */
-.table-stripe {
-    tr:nth-child(2n) td {
-        background-color: #eee;
-    }
+.table-stripe tbody tr:nth-child(even) td,
+.table-stripe-col tbody tr td:nth-child(odd) {
+    background-color: $pigeon-table-color-stripe;
 }

@@ -14,7 +14,7 @@ body {
 /* Standard element typography */
 
 p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
-blockquote, dl, figure, ol, ul, hr, pre, table {
+blockquote, caption, dl, figure, ol, ul, hr, pre, table {
     @extend .space;
     margin-top: 0;
 }
@@ -22,7 +22,7 @@ blockquote, dl, figure, ol, ul, hr, pre, table {
 
 /* Heading typography */
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, dt, th {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
     font-family: $pigeon-type-face-heading;
     font-weight: $pigeon-type-weight-heading;
 }

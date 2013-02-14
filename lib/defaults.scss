@@ -17,3 +17,9 @@ $pigeon-type-weight-heading: normal !default;
 // Type: faces
 $pigeon-type-face: Arial, Helvetica, sans-serif !default;
 $pigeon-type-face-heading: $pigeon-type-face !default;
+
+// Table: color
+$pigeon-table-color: #d6d6d6 !default;
+$pigeon-table-color-border: darken($pigeon-table-color, 10%) !default;
+$pigeon-table-color-header: $pigeon-table-color !default;
+$pigeon-table-color-stripe: lighten($pigeon-table-color, 10%) !default;
