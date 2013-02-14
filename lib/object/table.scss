@@ -31,6 +31,21 @@
 }
 
 /*
+ * Wide Table object
+ * -----------------
+ *
+ * Style a table to always stretch to the full width of
+ * the containing element.
+ *
+ *     <table class="table table-wide">
+ *         ...
+ *     </table>
+ */
+.table-wide {
+    width: 100%;
+}
+
+/*
  * Striped Table object
  * --------------------
  *
