@@ -519,15 +519,156 @@ table {
  *         <li style="float: left;"> ... </li>
  *     </ul>
  */
-.clearfix {
+.clearfix, .blocknav {
   zoom: 1;
 }
-.clearfix:before, .clearfix:after {
+.clearfix:before, .blocknav:before, .clearfix:after, .blocknav:after {
   display: table;
   content: '';
 }
-.clearfix:after {
+.clearfix:after, .blocknav:after {
   clear: both;
+}
+
+/*
+ * Blocknav object
+ * ---------------
+ *
+ * Remove standard list styling and display list
+ * items as floated blocks. Extends the `clearfix`
+ * object.
+ *
+ *     <ul class="blocknav">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.blocknav {
+  padding-left: 0;
+  list-style: none;
+}
+.blocknav > li {
+  float: left;
+}
+.blocknav > li, .blocknav > li > a {
+  display: block;
+}
+
+/*
+ * Nav object
+ * ----------
+ *
+ * Remove standard list styling and display list
+ * items inline.
+ *
+ *     <ul class="nav">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.nav {
+  padding-left: 0;
+  list-style: none;
+}
+.nav > li, .nav > li > a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Delimited Nav object
+ * --------------------
+ *
+ * Add a delimiter to list items. Dependent on the
+ * Nav object.
+ *
+ *     <ul class="nav nav-delim">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.nav-delim > li:after {
+  content: ", ";
+}
+.nav-delim > li:last-child:after {
+  content: "";
+  display: none;
+}
+
+/*
+ * Stack object
+ * ------------
+ *
+ * Remove standard list styling and stack list items.
+ *
+ *     <ul class="stack">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.stack {
+  padding-left: 0;
+  list-style: none;
+}
+.stack > li, .stack > li > a {
+  display: block;
+}
+
+/*
+ * Table object
+ * ------------
+ *
+ * Style a table.
+ *
+ *     <table class="table">
+ *         ...
+ *     </table>
+ */
+.table {
+  border-bottom: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+}
+.table th {
+  background-color: #d6d6d6;
+}
+.table td, .table th {
+  border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
+}
+.table tfoot td, .table tfoot th {
+  border-top: 2px solid #bdbdbd;
+}
+
+/*
+ * Wide Table object
+ * -----------------
+ *
+ * Style a table to always stretch to the full width of
+ * the containing element. Dependent on the Table object.
+ *
+ *     <table class="table table-wide">
+ *         ...
+ *     </table>
+ */
+.table-wide {
+  width: 100%;
+}
+
+/*
+ * Striped Table object
+ * --------------------
+ *
+ * Style a table with alternating row colours.
+ * Dependent on the Table object.
+ *
+ *     <table class="table table-stripe">
+ *         ...
+ *     </table>
+ */
+.table-stripe tbody tr:nth-child(even) td,
+.table-stripe-col tbody tr td:nth-child(odd) {
+  background-color: #f0f0f0;
 }
 
 /*
@@ -544,10 +685,32 @@ table {
 }
 
 /*
+ * Indent object
+ * ------------
+ *
+ * Adds standard typographic indentation to an element.
+ *
+ * This object is extended by blockquote and list elements.
+ *
+ *     <p class="indent"> ... </p>
+ */
+.indent, .quote, blockquote, ol ol, ol ul, ul ol, ul ul, dd {
+  padding-left: 22px;
+  padding-left: 2.2rem;
+}
+
+.indent-2, ol, ul {
+  padding-left: 44px;
+  padding-left: 4.4rem;
+}
+
+/*
  * Quote object
  * ------------
  *
- * Style a quote.
+ * Style a quote. Extends the `indent` object.
+ *
+ * This object is extended by the blockquote element.
  *
  *     <blockquote class="quote">
  *         <p class="quote-body"> ... </p>
@@ -557,8 +720,6 @@ table {
 .quote, blockquote {
   margin-left: 0;
   margin-right: 0;
-  padding-left: 22px;
-  padding-left: 2.2rem;
 }
 
 .quote-body {
@@ -583,6 +744,9 @@ table {
  *
  * Reduce type size of an element to indicate small-print.
  *
+ * This object is extended by some core
+ * typographic elements.
+ *
  *     <p class="smallprint"> ... </p>
  */
 .smallprint, figcaption, small, sub, sup {
@@ -598,17 +762,19 @@ table {
  *
  * Adds typographic spacing to an element.
  *
+ * This object is extended by some core
+ * typographic elements.
+ *
  *     <div class="space"> ... </div>
  *     <p> ... </p>
  */
-.space, .space-dbl, p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
-blockquote, dl, figure, ol, ul, hr, pre, table {
-  display: block;
+.space, p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
+blockquote, caption, dl, figure, ol, ul, hr, pre, table {
   margin-bottom: 22px;
   margin-bottom: 2.2rem;
 }
 
-.space-dbl {
+.space-2 {
   margin-bottom: 44px;
   margin-bottom: 4.4rem;
 }
@@ -622,13 +788,12 @@ blockquote, dl, figure, ol, ul, hr, pre, table {
  *     <p class="space-above"> ... </p>
  *     <p> ... </p>
  */
-.space-above, .space-above-dbl {
-  display: block;
+.space-above {
   margin-top: 22px;
   margin-top: 2.2rem;
 }
 
-.space-above-dbl {
+.space-above-2 {
   margin-top: 44px;
   margin-top: 4.4rem;
 }
@@ -661,16 +826,17 @@ body {
   font-size: 1.8rem;
   line-height: 22px;
   line-height: 2.2rem;
+  color: #333333;
 }
 
 /* Standard element typography */
 p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
-blockquote, dl, figure, ol, ul, hr, pre, table {
+blockquote, caption, dl, figure, ol, ul, hr, pre, table {
   margin-top: 0;
 }
 
 /* Heading typography */
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, dt, th {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
   font-family: "Varela Round", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
 }
@@ -717,9 +883,21 @@ h1 {
   line-height: 4rem;
 }
 
+/* Links */
+a {
+  color: #4781ba;
+}
+a:visited {
+  color: #7f629c;
+}
+
 /* Text-level semantics */
 cite {
   font-style: italic;
+}
+
+mark {
+  background-color: #ffff99;
 }
 
 q {
@@ -734,14 +912,8 @@ q:after {
 
 /* Block Quotes */
 /* Lists */
-ol, ul {
-  padding-left: 44px;
-  padding-left: 4.4rem;
-}
 ol ol, ol ul, ul ol, ul ul {
   margin-bottom: 0;
-  padding-left: 22px;
-  padding-left: 2.2rem;
 }
 
 dt {
@@ -752,8 +924,6 @@ dd {
   margin-left: 0;
   margin-bottom: 11px;
   margin-bottom: 1.1rem;
-  padding-left: 22px;
-  padding-left: 2.2rem;
 }
 
 /* Tables */
@@ -763,11 +933,17 @@ table {
 
 th {
   text-align: left;
+  font-weight: bold;
 }
 
 th, td {
-  padding: 3px 9px;
-  padding:  0.3rem 0.9rem;
+  padding: 5px 9px;
+  padding:  0.5rem 0.9rem;
+}
+
+caption {
+  font-weight: bold;
+  text-align: left;
 }
 
 .grid {
