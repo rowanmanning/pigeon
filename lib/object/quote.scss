@@ -3,7 +3,9 @@
  * Quote object
  * ------------
  *
- * Style a quote.
+ * Style a quote. Extends the `indent` object.
+ *
+ * This object is extended by the blockquote element.
  *
  *     <blockquote class="quote">
  *         <p class="quote-body"> ... </p>
@@ -11,9 +13,9 @@
  *     </blockquote>
  */
 .quote {
+    @extend .indent;
     margin-left: 0;
     margin-right: 0;
-    @include rem("padding-left", $pigeon-type-line-height);
 }
 .quote-body {
     margin-top: 0;

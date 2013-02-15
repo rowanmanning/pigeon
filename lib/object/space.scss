@@ -5,13 +5,16 @@
  *
  * Adds typographic spacing to an element.
  *
+ * This object is extended by some core
+ * typographic elements.
+ *
  *     <div class="space"> ... </div>
  *     <p> ... </p>
  */
 .space {
     @include rem("margin-bottom", $pigeon-type-line-height);
 }
-.space-dbl {
+.space-2 {
     @include rem("margin-bottom", ($pigeon-type-line-height * 2));
 }
 
@@ -27,6 +30,6 @@
 .space-above {
     @include rem("margin-top", $pigeon-type-line-height);
 }
-.space-above-dbl {
+.space-above-2 {
     @include rem("margin-top", ($pigeon-type-line-height * 2));
 }

@@ -69,6 +69,26 @@
 }
 
 /*
+ * Indent object
+ * ------------
+ *
+ * Adds standard typographic indentation to an element.
+ *
+ * This object is extended by blockquote and list elements.
+ *
+ *     <p class="indent"> ... </p>
+ */
+.indent, .quote, blockquote, ol ol, ol ul, ul ol, ul ul, dd {
+  padding-left: 22px;
+  padding-left: 2.2rem;
+}
+
+.indent-2, ol, ul {
+  padding-left: 44px;
+  padding-left: 4.4rem;
+}
+
+/*
  * Nav object
  * ----------
  *
@@ -114,7 +134,9 @@
  * Quote object
  * ------------
  *
- * Style a quote.
+ * Style a quote. Extends the `indent` object.
+ *
+ * This object is extended by the blockquote element.
  *
  *     <blockquote class="quote">
  *         <p class="quote-body"> ... </p>
@@ -124,8 +146,6 @@
 .quote, blockquote {
   margin-left: 0;
   margin-right: 0;
-  padding-left: 22px;
-  padding-left: 2.2rem;
 }
 
 .quote-body {
@@ -150,6 +170,9 @@
  *
  * Reduce type size of an element to indicate small-print.
  *
+ * This object is extended by some core
+ * typographic elements.
+ *
  *     <p class="smallprint"> ... </p>
  */
 .smallprint, figcaption, small, sub, sup {
@@ -165,6 +188,9 @@
  *
  * Adds typographic spacing to an element.
  *
+ * This object is extended by some core
+ * typographic elements.
+ *
  *     <div class="space"> ... </div>
  *     <p> ... </p>
  */
@@ -174,7 +200,7 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
   margin-bottom: 2.2rem;
 }
 
-.space-dbl {
+.space-2 {
   margin-bottom: 44px;
   margin-bottom: 4.4rem;
 }
@@ -193,7 +219,7 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
   margin-top: 2.2rem;
 }
 
-.space-above-dbl {
+.space-above-2 {
   margin-top: 44px;
   margin-top: 4.4rem;
 }
@@ -387,14 +413,8 @@ q:after {
 
 /* Block Quotes */
 /* Lists */
-ol, ul {
-  padding-left: 44px;
-  padding-left: 4.4rem;
-}
 ol ol, ol ul, ul ol, ul ul {
   margin-bottom: 0;
-  padding-left: 22px;
-  padding-left: 2.2rem;
 }
 
 dt {
@@ -405,8 +425,6 @@ dd {
   margin-left: 0;
   margin-bottom: 11px;
   margin-bottom: 1.1rem;
-  padding-left: 22px;
-  padding-left: 2.2rem;
 }
 
 /* Tables */

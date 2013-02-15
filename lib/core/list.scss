@@ -2,11 +2,11 @@
 /* Lists */
 
 ol, ul {
-    @include rem("padding-left", ($pigeon-type-line-height * 2));
+    @extend .indent-2;
 
     ol, ul {
+        @extend .indent;
         margin-bottom: 0;
-        @include rem("padding-left", $pigeon-type-line-height);
     }
 }
 
@@ -15,7 +15,7 @@ dt {
 }
 
 dd {
+    @extend .indent;
     margin-left: 0;
     @include rem("margin-bottom", ($pigeon-type-line-height / 2));
-    @include rem("padding-left", $pigeon-type-line-height);
 }
