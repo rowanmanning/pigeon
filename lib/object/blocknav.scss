@@ -1,0 +1,27 @@
+
+/*
+ * Blocknav object
+ * ---------------
+ *
+ * Remove standard list styling and display list
+ * items as floated blocks. Extends the `clearfix`
+ * object.
+ *
+ *     <ul class="blocknav">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.blocknav {
+    @extend .clearfix;
+    padding-left: 0;
+    list-style: none;
+
+    > li {
+        float: left;
+
+        &, > a {
+            display: block;
+        }
+    }
+}

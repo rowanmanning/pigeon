@@ -1,0 +1,22 @@
+
+/*
+ * Stack object
+ * ------------
+ *
+ * Remove standard list styling and stack list items.
+ *
+ *     <ul class="stack">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.stack {
+    padding-left: 0;
+    list-style: none;
+
+    > li {
+        &, > a {
+            display: block;
+        }
+    }
+}

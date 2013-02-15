@@ -10,6 +10,30 @@
  * 
  */
 /*
+ * Blocknav object
+ * ---------------
+ *
+ * Remove standard list styling and display list
+ * items as floated blocks. Extends the `clearfix`
+ * object.
+ *
+ *     <ul class="blocknav">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.blocknav {
+  padding-left: 0;
+  list-style: none;
+}
+.blocknav > li {
+  float: left;
+}
+.blocknav > li, .blocknav > li > a {
+  display: block;
+}
+
+/*
  * Clearfix object
  * ---------------
  *
@@ -20,14 +44,14 @@
  *         <li style="float: left;"> ... </li>
  *     </ul>
  */
-.clearfix {
+.clearfix, .blocknav {
   zoom: 1;
 }
-.clearfix:before, .clearfix:after {
+.clearfix:before, .blocknav:before, .clearfix:after, .blocknav:after {
   display: table;
   content: '';
 }
-.clearfix:after {
+.clearfix:after, .blocknav:after {
   clear: both;
 }
 
@@ -42,6 +66,48 @@
 .cramp {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/*
+ * Nav object
+ * ----------
+ *
+ * Remove standard list styling and display list
+ * items inline.
+ *
+ *     <ul class="nav">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.nav {
+  padding-left: 0;
+  list-style: none;
+}
+.nav > li, .nav > li > a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Delimited Nav object
+ * --------------------
+ *
+ * Add a delimiter to list items. Dependent on the
+ * Nav object.
+ *
+ *     <ul class="nav nav-delim">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.nav-delim > li:after {
+  content: ", ";
+}
+.nav-delim > li:last-child:after {
+  content: "";
+  display: none;
 }
 
 /*
@@ -133,6 +199,25 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
 }
 
 /*
+ * Stack object
+ * ------------
+ *
+ * Remove standard list styling and stack list items.
+ *
+ *     <ul class="stack">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.stack {
+  padding-left: 0;
+  list-style: none;
+}
+.stack > li, .stack > li > a {
+  display: block;
+}
+
+/*
  * Table object
  * ------------
  *
@@ -162,7 +247,7 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
  * -----------------
  *
  * Style a table to always stretch to the full width of
- * the containing element.
+ * the containing element. Dependent on the Table object.
  *
  *     <table class="table table-wide">
  *         ...
@@ -177,6 +262,7 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
  * --------------------
  *
  * Style a table with alternating row colours.
+ * Dependent on the Table object.
  *
  *     <table class="table table-stripe">
  *         ...

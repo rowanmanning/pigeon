@@ -1,0 +1,47 @@
+
+/*
+ * Nav object
+ * ----------
+ *
+ * Remove standard list styling and display list
+ * items inline.
+ *
+ *     <ul class="nav">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.nav {
+    padding-left: 0;
+    list-style: none;
+
+    > li {
+        &, > a {
+            @include inline-block;
+        }
+    }
+}
+
+/*
+ * Delimited Nav object
+ * --------------------
+ *
+ * Add a delimiter to list items. Dependent on the
+ * Nav object.
+ *
+ *     <ul class="nav nav-delim">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.nav-delim {
+    > li {
+        &:after {
+            content: $pigeon-nav-delimiter;
+        }
+        &:last-child:after {
+            content: "";
+            display: none;
+        }
+    }
+}

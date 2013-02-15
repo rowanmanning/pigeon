@@ -35,7 +35,7 @@
  * -----------------
  *
  * Style a table to always stretch to the full width of
- * the containing element.
+ * the containing element. Dependent on the Table object.
  *
  *     <table class="table table-wide">
  *         ...
@@ -50,6 +50,7 @@
  * --------------------
  *
  * Style a table with alternating row colours.
+ * Dependent on the Table object.
  *
  *     <table class="table table-stripe">
  *         ...
