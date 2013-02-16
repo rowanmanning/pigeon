@@ -1,0 +1,21 @@
+// object/forkme
+
+// 'Fork on GitHub ribbon'
+.forkme {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &, img {
+        display: block;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+        @media all and (min-width: $frag-break-bravo) {
+            width: 149px;
+            height: 149px;
+        }
+    }
+}

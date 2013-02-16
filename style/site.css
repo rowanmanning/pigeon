@@ -1178,6 +1178,25 @@ caption {
   border-top: 5px dotted #eadbcd;
 }
 
+.forkme {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.forkme, .forkme img {
+  display: block;
+}
+.forkme img {
+  width: 120px;
+  height: 120px;
+}
+@media all and (min-width: 680px) {
+  .forkme img {
+    width: 149px;
+    height: 149px;
+  }
+}
+
 .logo {
   display: block;
   text-align: center;
