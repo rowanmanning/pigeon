@@ -18,10 +18,10 @@ $pigeon-type-face-heading: "Varela Round", Verdana, Geneva, Tahoma, sans-serif;
 @import "vendor/rowanmanning/frag/grid/default/grid";
 
 // Objects
-@import "object/noisy.scss";
-@import "object/swatch.scss";
+@import "object/noisy";
+@import "object/swatch";
 
 // Site styles
-@import "site/glitter.scss";
-@import "site/layout.scss";
-@import "site/nav.scss";
+@import "site/code";
+@import "site/glitter";
+@import "site/layout";

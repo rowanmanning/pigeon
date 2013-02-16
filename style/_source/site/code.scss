@@ -1,0 +1,32 @@
+
+// Syntax highlighting
+.highlight {
+    @extend .space;
+    @include rem("padding", $pigeon-type-line-height);
+    color: #dedede;
+    background-color: #333;
+    border: 10px solid $c-cream-dk;
+}
+.highlight pre {
+    margin-bottom: 0;
+}
+
+// HTML
+.highlight .html {
+    .nt, .na {
+        color: $c-blue;
+    }
+    .s {
+        color: $c-lilac;
+    }
+}
+
+// SCSS
+.highlight .scss {
+    .na, .k {
+        color: $c-blue;
+    }
+    .s, .s2, .mi, .kt {
+        color: $c-lilac;
+    }
+}
