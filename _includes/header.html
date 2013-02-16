@@ -1,10 +1,18 @@
 
-<ul class="nav">
+<ul class="stack">
     <li>
         <a href="/">Home</a>
     </li>
     <li>
         <a href="/docs/">Documentation</a>
-        {% include docs/contents.html %}
+
+        <ul class="stack indent">
+            <li>
+                <a href="/docs/#typography">Type Objects</a>
+                <a href="/docs/#lists">List Objects</a>
+                <a href="/docs/#data">Data Objects</a>
+            </li>
+        </ul>
+
     </li>
 </ul>
