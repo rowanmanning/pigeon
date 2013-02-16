@@ -5,6 +5,16 @@ Pigeon
 Pigeon is an OOCSS framework for rapid prototyping and building smart websites.
 
 
+Usage
+-----
+
+Pigeon is easy to use and highly configurable, you can use it with either plain CSS or Sass. The [Pigeon website][pigeon] has the full documentation.
+
+* [Installing and using Pigeon][pigeon-install]
+* [Configuring Pigeon, and customising to suit your needs][pigeon-config]
+* [Full API documentation on all of Pigeon's OOCSS objects][pigeon-objects]
+
+
 Development
 -----------
 
@@ -36,4 +46,8 @@ Licensed under the [MIT][mit] license.
 
 [make]: http://gnuwin32.sourceforge.net/packages/make.htm
 [mit]: http://opensource.org/licenses/mit-license.php
+[pigeon]: http://pigeoncss.com/
+[pigeon-install]: http://pigeoncss.com/docs/install/
+[pigeon-config]: http://pigeoncss.com/docs/config/
+[pigeon-objects]: http://pigeoncss.com/docs/objects/
 [sass]: http://sass-lang.com/download.html
