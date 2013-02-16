@@ -15,12 +15,17 @@ layout: page
         consistent way of laying out type.
     </p>
 
+
     <div id="typography-space" class="textbox css-object">
         <h3>
             <a href="#typography-space" class="section-link">Space</a>
         </h3>
 
-        <p>The <code>space</code> object…</p>
+        <p>
+            The <code>space</code> object is used to add typographic margins to
+            an element. This allows you to make non-type elements to sit nicely
+            in the flow of the page.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<div class="space">
@@ -28,11 +33,22 @@ layout: page
 </div>{% endhighlight %}
         </div>
 
+        <p>
+            The <code>space-above</code> object works in the same way, except
+            that it adds spacing above rather than below. This gives you more
+            control over typographic spacing.
+        </p>
+
         <div class="css-example">
             {% highlight html %}<p class="space-above">
     This text has space above it as well as below.
 </p>{% endhighlight %}
         </div>
+
+        <p>
+            Both the <code>space</code> and <code>space-above</code> objects can
+            be suffixed with <code>-2</code> to double the spacing added.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<p class="space-2 space-above-2">
@@ -40,16 +56,28 @@ layout: page
 </p>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/space.scss">View the source code for this object</a>.</p>
+        <p>
+            This object is automatically applied to key typographic elements
+            such as paragraphs – you only need to add it to elements which do
+            not normally sit in the flow of type. See the
+            <a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/core/type.scss">source code for core typography</a> for the elements this applies to.
+        </p>
+
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/space.scss">View the source code for the space object</a>.</p>
 
     </div>
+
 
     <div id="typography-cramp" class="textbox css-object">
         <h3>
             <a href="#typography-cramp" class="section-link">Cramp</a>
         </h3>
 
-        <p>The <code>cramp</code> object…</p>
+        <p>
+            The <code>cramp</code> object is used to remove typographic spacing
+            from an element. This allows you to easily override default type
+            margins for paragraphs, for example.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<p class="cramp">
@@ -57,16 +85,22 @@ layout: page
 </p>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/cramp.scss">View the source code for this object</a>.</p>
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/cramp.scss">View the source code for the cramp object</a>.</p>
 
     </div>
+
 
     <div id="typography-textbox" class="textbox css-object">
         <h3>
             <a href="#typography-textbox" class="section-link">Textbox</a>
         </h3>
 
-        <p>The <code>textbox</code> object…</p>
+        <p>
+            The <code>textbox</code> object is used to pad a container,
+            optimizing typographic spacing for the elements it contains. This
+            allows you to avoid using the <code>space-above</code> object when
+            working with large blocks of text.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<div class="textbox">
@@ -75,16 +109,20 @@ layout: page
 </div>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/textbox.scss">View the source code for this object</a>.</p>
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/textbox.scss">View the source code for the textbox object</a>.</p>
 
     </div>
+
 
     <div id="typography-indent" class="textbox css-object">
         <h3>
             <a href="#typography-indent" class="section-link">Indent</a>
         </h3>
 
-        <p>The <code>indent</code> object…</p>
+        <p>
+            The <code>indent</code> object is used to indent an element in a way
+            which scales appropriately as text is resized.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<p class="indent">
@@ -92,16 +130,38 @@ layout: page
 </p>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/indent.scss">View the source code for this object</a>.</p>
+        <p>
+            The <code>indent</code> object can be suffixed with <code>-2</code>
+            to double the indentation.
+        </p>
+
+        <div class="css-example">
+            {% highlight html %}<p class="indent-2">
+    This text is double-indented.
+</p>{% endhighlight %}
+        </div>
+
+        <p>
+            This object is automatically applied to quotes and lists, so you'll
+            only need to add it manually to elements which are not normally
+            indented.
+        </p>
+
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/indent.scss">View the source code for the indent object</a>.</p>
 
     </div>
+
 
     <div id="typography-hn" class="textbox css-object">
         <h3>
             <a href="#typography-hn" class="section-link">H1–H6</a>
         </h3>
 
-        <p>The <code>h1–h6</code> objects…</p>
+        <p>
+            The <code>h1–h6</code> objects are used to apply heading styles to
+            non-heading elements, or to disguise different heading levels to
+            CSS-enabled browsers.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<h3 class="h1">
@@ -109,16 +169,21 @@ layout: page
 </h3>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/core/type.scss">View the source code for these objects</a>.</p>
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/core/type.scss">View the source code for the h1–h6 objects</a>.</p>
 
     </div>
+
 
     <div id="typography-smallprint" class="textbox css-object">
         <h3>
             <a href="#typography-smallprint" class="section-link">Smallprint</a>
         </h3>
 
-        <p>The <code>smallprint</code> object…</p>
+        <p>
+            The <code>smallprint</code> object is used to decrease the font-size
+            of an element in order to indicate that it is of less immediate
+            importance to the user than the surrounding text.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<p class="smallprint">
@@ -126,16 +191,29 @@ layout: page
 </p>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/smallprint.scss">View the source code for this object</a>.</p>
+        <p>
+            This object is automatically applied to the <code>figcaption</code>,
+            <code>small</code>, <code>sub</code> and <code>sup</code> elements
+            so you'll only need to add it manually to elements which are not
+            normally smaller.
+        </p>
+
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/smallprint.scss">View the source code for the smallprint object</a>.</p>
 
     </div>
+
 
     <div id="typography-quote" class="textbox css-object">
         <h3>
             <a href="#typography-quote" class="section-link">Quote</a>
         </h3>
 
-        <p>The <code>quote</code> object…</p>
+        <p>
+            The <code>quote</code> object, along with the
+            <code>quote-body</code> and <code>quote-attrib</code> sub-objects,
+            is used to style quotations. These objects can be applied to any
+            element, which allows you to use your own preferred markup.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<blockquote class="quote">
@@ -144,7 +222,14 @@ layout: page
 </blockquote>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/quote.scss">View the source code for this object</a>.</p>
+        <p>
+            The <code>quote</code> object is automatically applied to the
+            <code>blockquote</code> element, although you'll still need to
+            manually apply the <code>quote-body</code> and
+            <code>quote-attrib</code> objects.
+        </p>
+
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/quote.scss">View the source code for the quote object</a>.</p>
 
     </div>
 
@@ -153,6 +238,7 @@ layout: page
 
 <div id="lists" class="section space-above-2 textbox">
     <h2>List Objects</h2>
+
 
     <div id="lists-stack" class="textbox css-object">
         <h3>
@@ -168,9 +254,10 @@ layout: page
 </ul>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/stack.scss">View the source code for this object</a>.</p>
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/stack.scss">View the source code for the stack object</a>.</p>
 
     </div>
+
 
     <div id="lists-nav" class="textbox css-object">
         <h3>
@@ -194,9 +281,10 @@ layout: page
 </ul>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/nav.scss">View the source code for this object</a>.</p>
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/nav.scss">View the source code for the nav object</a>.</p>
 
     </div>
+
 
     <div id="lists-blocknav" class="textbox css-object">
         <h3>
@@ -212,7 +300,7 @@ layout: page
 </ul>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/blocknav.scss">View the source code for this object</a>.</p>
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/blocknav.scss">View the source code for the blocknav object</a>.</p>
 
     </div>
 
@@ -221,6 +309,7 @@ layout: page
 
 <div id="data" class="section space-above-2 textbox">
     <h2>Data Objects</h2>
+
 
     <div id="data-table" class="textbox css-object">
         <h3>
@@ -266,7 +355,7 @@ layout: page
 </table>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/table.scss">View the source code for this object</a>.</p>
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/table.scss">View the source code for the table object</a>.</p>
 
     </div>
 
