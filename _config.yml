@@ -15,6 +15,12 @@ lang: en-GB
 host: pigeon.rowanmanning.com
 tld: rowanmanning.com
 
+# Repo details
+repo:
+  url: https://github.com/rowanmanning/pigeon
+  raw: https://raw.github.com/rowanmanning/pigeon
+  branch: develop
+
 # Author details
 author:
   name: Rowan Manning
