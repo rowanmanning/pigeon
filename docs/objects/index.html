@@ -245,12 +245,29 @@ layout: page
             <a href="#lists-stack" class="section-link">Stack</a>
         </h3>
 
-        <p>The <code>stack</code> object…</p>
+        <p>
+            The <code>stack</code> object is used to remove standard list
+            styling and display a list as a simple stack of block-level
+            elements.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<ul class="stack">
     <li>This list looks just like…</li>
     <li>…a stack of divs.</li>
+</ul>{% endhighlight %}
+        </div>
+
+        <p>
+            Any anchors which are direct descendants of the stack's list items
+            are also displayed as blocks.
+        </p>
+
+        <div class="css-example">
+            {% highlight html %}<ul class="stack">
+    <li>
+        <a href="#">This is a block too!</a>
+    </li>
 </ul>{% endhighlight %}
         </div>
 
@@ -264,7 +281,10 @@ layout: page
             <a href="#lists-nav" class="section-link">Nav</a>
         </h3>
 
-        <p>The <code>nav</code> object…</p>
+        <p>
+            The <code>nav</code> object is used to remove standard list styling
+            and display list items as inline blocks side by side.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<ul class="nav">
@@ -272,6 +292,25 @@ layout: page
     <li>…spans side by side.</li>
 </ul>{% endhighlight %}
         </div>
+
+        <p>
+            Any anchors which are direct descendants of the nav's list items are
+            also displayed as inline blocks.
+        </p>
+
+        <div class="css-example">
+            {% highlight html %}<ul class="nav">
+    <li>
+        <a href="#">This is an inline block too!</a>
+    </li>
+</ul>{% endhighlight %}
+        </div>
+
+        <p>
+            The <code>nav-delim</code> extension is used alongside
+            <code>nav</code> to add commas after each list item. This allows you
+            to easily create comma-delimited lists with semantic meaning.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<ul class="nav nav-delim">
@@ -291,7 +330,11 @@ layout: page
             <a href="#lists-blocknav" class="section-link">Blocknav</a>
         </h3>
 
-        <p>The <code>blocknav</code> object…</p>
+        <p>
+            The <code>blocknav</code> object is used to remove standard list
+            styling and display list items as blocks floated side by side.
+            Floats are automatically cleared.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<ul class="blocknav">
@@ -316,7 +359,11 @@ layout: page
             <a href="#data-table" class="section-link">Table</a>
         </h3>
 
-        <p>The <code>table</code> object…</p>
+        <p>
+            The <code>table</code> object is used to present tabular data
+            nicely. It is indended for use with <code>table</code> elements and
+            is not particularly useful on anything else.
+        </p>
 
         <div class="css-example">
             {% highlight html %}<table class="table">
@@ -328,6 +375,12 @@ layout: page
 </table>{% endhighlight %}
         </div>
 
+        <p>
+            The <code>table-wide</code> extension is used alongside
+            <code>table</code> to make the table span the full width of its
+            container.
+        </p>
+
         <div class="css-example">
             {% highlight html %}<table class="table table-wide">
     <tr>
@@ -337,17 +390,21 @@ layout: page
 </table>{% endhighlight %}
         </div>
 
+        <p>
+            The <code>table-stripe</code> and <code>table-stripe-col</code>
+            extensions is used alongside <code>table</code> to style alternating
+            rows and columns differently. This makes large tables more readable.
+        </p>
+
         <div class="css-example">
             {% highlight html %}<table class="table table-stripe">
     <tr>
         <td>This table has…</td>
         <td>…striped rows.</td>
     </tr>
-</table>{% endhighlight %}
-        </div>
+</table>
 
-        <div class="css-example">
-            {% highlight html %}<table class="table table-stripe-col">
+<table class="table table-stripe-col">
     <tr>
         <td>This table has…</td>
         <td>…striped columns.</td>
