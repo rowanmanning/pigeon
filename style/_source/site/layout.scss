@@ -3,5 +3,26 @@
 .page {
     margin-left: auto;
     margin-right: auto;
-    @include rem('padding-top', 60px);
+    @include rem('padding-top', $pigeon-type-line-height);
+    @include rem('padding-bottom', ($pigeon-type-line-height * 3));
+}
+
+// Main content styles
+.main {
+    @include rem('padding-top', ($pigeon-type-line-height * 2));
+}
+
+// Non-mobile
+@media all and (min-width: 680px) {
+
+    // Main container styles
+    .page {
+        @include rem('padding-top', ($pigeon-type-line-height * 3));
+    }
+
+    // Main content styles
+    .main {
+        padding-top: 0;
+    }
+
 }

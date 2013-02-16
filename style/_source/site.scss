@@ -4,8 +4,12 @@ $t-family: Verdana, Geneva, Tahoma, sans-serif;
 $t-family-heading: "Varela Round", Verdana, Geneva, Tahoma, sans-serif;
 $t-family-mono: Consolas, "Lucida Console", Monaco, monospace;
 
+// Variables: spacing
+$gutter: 20px;
+
 // Variables: colour
 $c-cream: #fffaf5;
+$c-cream-md: #f9eee4;
 $c-cream-dk: #eadbcd;
 $c-lilac: #cae;
 $c-lilac-dk: #7f629c;
@@ -27,6 +31,7 @@ $pigeon-table-color-stripe: #f8f0e7;
 
 // Objects
 @import "object/css-object";
+@import "object/navigation";
 @import "object/noisy";
 @import "object/section";
 @import "object/swatch";

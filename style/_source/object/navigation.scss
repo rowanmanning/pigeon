@@ -1,0 +1,30 @@
+
+// Site navigation
+.navigation {
+    text-align: center;
+
+    li {
+        @include rem("margin-bottom", ($pigeon-type-line-height / 2));
+    }
+    
+    a, a:visited {
+        padding-left: $gutter;
+        padding-right: $gutter;
+        @include rem("padding-top", ($pigeon-type-line-height / 2));
+        @include rem("padding-bottom", ($pigeon-type-line-height / 2));
+        background-color: $c-cream-md;
+        color: $c-grey-dk;
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: $c-lilac;
+    }
+
+    @media all and (min-width: 680px) {
+        text-align: left;
+
+        a {
+            border-left: 5px solid $c-lilac-dk;
+        }
+    }
+}
