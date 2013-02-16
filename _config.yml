@@ -19,7 +19,7 @@ tld: pigeoncss.com
 repo:
   url: https://github.com/rowanmanning/pigeon
   raw: https://raw.github.com/rowanmanning/pigeon
-  branch: develop
+  branch: master
 
 # Author details
 author:
