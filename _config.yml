@@ -12,8 +12,8 @@ server: true
 
 # Site details
 lang: en-GB
-host: pigeon.rowanmanning.com
-tld: rowanmanning.com
+host: pigeoncss.com
+tld: pigeoncss.com
 
 # Repo details
 repo:
