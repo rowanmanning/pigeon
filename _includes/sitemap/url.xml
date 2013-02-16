@@ -1,0 +1,15 @@
+
+{% if page.url != '' and page.noindex != true %}
+    <url>
+        <loc>http://{{ site.host }}{{ page.url | replace: 'index.html', '' }}</loc>
+        <lastmod>
+            {% if page.lastmod %}
+                {{ page.lastmod | date: '%Y-%m-%dT%H:%M:%SZ' }}
+            {% elsif page.date %}
+                {{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}
+            {% else %}
+                {{ site.time | date: '%Y-%m-%dT%H:%M:%SZ' }}
+            {% endif %}
+        </lastmod>
+    </url>
+{% endif %}
