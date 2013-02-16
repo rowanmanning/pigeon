@@ -1,0 +1,15 @@
+
+// Site logo
+.logo {
+    display: block;
+    text-align: center;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    @media all and (min-width: 680px) {
+        text-align: left;
+    }
+}

@@ -1178,6 +1178,20 @@ caption {
   border-top: 5px dotted #eadbcd;
 }
 
+.logo {
+  display: block;
+  text-align: center;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+@media all and (min-width: 680px) {
+  .logo {
+    text-align: left;
+  }
+}
+
 .navigation {
   text-align: center;
 }
@@ -1332,16 +1346,6 @@ body:before {
   padding-top: 4.4rem;
 }
 
-@media all and (min-width: 680px) {
-  .page {
-    padding-top: 66px;
-    padding-top: 6.6rem;
-  }
-
-  .main {
-    padding-top: 0;
-  }
-}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-align: center;
 }
