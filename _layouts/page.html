@@ -7,15 +7,15 @@
     <div class="wrapper">
         <div class="grid page">
 
-            <div class="col ca-12 cb-4 cc-3 aside">
+            <div class="col ca-12 cb-4 cc-3 header" role="banner">
                 {% include header.html %}
             </div>
 
             <div class="col ca-12 cb-8 cc-9">
-                <div class="main">
+                <div class="main" role="main">
                     {{ content }}
                 </div>
-                <div class="footer">
+                <div class="footer" role="contentinfo">
                     {% include footer.html %}
                 </div>
             </div>
