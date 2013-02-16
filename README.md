@@ -7,6 +7,9 @@ Pigeon is an OOCSS framework for rapid prototyping and building smart, scalable 
 **Current Version:** *1.0.0-beta*  
 **Browser Support (testing in progress):** *Android Browser 2.2–4.2, Firefox 3.6, Firefox 4–16, Google Chrome 14–23, Internet Explorer 6–10, Mobile Safari iOS 4–6, Opera 12.10, Safari 5–6*
 
+![Pigeon][logo]
+
+
 Usage
 -----
 
@@ -46,6 +49,7 @@ Licensed under the [MIT][mit] license.
 
 
 
+[logo]: http://pigeoncss.com/media/logo.png
 [make]: http://gnuwin32.sourceforge.net/packages/make.htm
 [mit]: http://opensource.org/licenses/mit-license.php
 [pigeon]: http://pigeoncss.com/
