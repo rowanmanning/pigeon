@@ -10,30 +10,6 @@
  * 
  */
 /*
- * Blocknav object
- * ---------------
- *
- * Remove standard list styling and display list
- * items as floated blocks. Extends the `clearfix`
- * object.
- *
- *     <ul class="blocknav">
- *         <li> ... </li>
- *         <li> ... </li>
- *     </ul>
- */
-.blocknav {
-  padding-left: 0;
-  list-style: none;
-}
-.blocknav > li {
-  float: left;
-}
-.blocknav > li, .blocknav > li > a {
-  display: block;
-}
-
-/*
  * Clearfix object
  * ---------------
  *
@@ -56,36 +32,27 @@
 }
 
 /*
- * Cramp object
- * ------------
+ * Blocknav object
+ * ---------------
  *
- * Remove typographic spacing from an element.
+ * Remove standard list styling and display list
+ * items as floated blocks. Extends the `clearfix`
+ * object.
  *
- *     <p class="cramp"> ... </p>
+ *     <ul class="blocknav">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
  */
-.cramp {
-  margin-top: 0;
-  margin-bottom: 0;
+.blocknav {
+  padding-left: 0;
+  list-style: none;
 }
-
-/*
- * Indent object
- * ------------
- *
- * Adds standard typographic indentation to an element.
- *
- * This object is extended by blockquote and list elements.
- *
- *     <p class="indent"> ... </p>
- */
-.indent, .quote, blockquote, ol ol, ol ul, ul ol, ul ul, dd {
-  padding-left: 22px;
-  padding-left: 2.2rem;
+.blocknav > li {
+  float: left;
 }
-
-.indent-2, ol, ul {
-  padding-left: 44px;
-  padding-left: 4.4rem;
+.blocknav > li, .blocknav > li > a {
+  display: block;
 }
 
 /*
@@ -128,6 +95,114 @@
 .nav-delim > li:last-child:after {
   content: "";
   display: none;
+}
+
+/*
+ * Stack object
+ * ------------
+ *
+ * Remove standard list styling and stack list items.
+ *
+ *     <ul class="stack">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.stack {
+  padding-left: 0;
+  list-style: none;
+}
+.stack > li, .stack > li > a {
+  display: block;
+}
+
+/*
+ * Table object
+ * ------------
+ *
+ * Style a table.
+ *
+ *     <table class="table">
+ *         ...
+ *     </table>
+ */
+.table {
+  border-bottom: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+}
+.table th {
+  background-color: #d6d6d6;
+}
+.table td, .table th {
+  border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
+}
+.table tfoot td, .table tfoot th {
+  border-top: 2px solid #bdbdbd;
+}
+
+/*
+ * Wide Table object
+ * -----------------
+ *
+ * Style a table to always stretch to the full width of
+ * the containing element. Dependent on the Table object.
+ *
+ *     <table class="table table-wide">
+ *         ...
+ *     </table>
+ */
+.table-wide {
+  width: 100%;
+}
+
+/*
+ * Striped Table object
+ * --------------------
+ *
+ * Style a table with alternating row colours.
+ * Dependent on the Table object.
+ *
+ *     <table class="table table-stripe">
+ *         ...
+ *     </table>
+ */
+.table-stripe tbody tr:nth-child(even) td,
+.table-stripe-col tbody tr td:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+/*
+ * Cramp object
+ * ------------
+ *
+ * Remove typographic spacing from an element.
+ *
+ *     <p class="cramp"> ... </p>
+ */
+.cramp {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+ * Indent object
+ * ------------
+ *
+ * Adds standard typographic indentation to an element.
+ *
+ * This object is extended by blockquote and list elements.
+ *
+ *     <p class="indent"> ... </p>
+ */
+.indent, .quote, blockquote, ol ol, ol ul, ul ol, ul ul, dd {
+  padding-left: 22px;
+  padding-left: 2.2rem;
+}
+
+.indent-2, ol, ul {
+  padding-left: 44px;
+  padding-left: 4.4rem;
 }
 
 /*
@@ -222,81 +297,6 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
 .space-above-2 {
   margin-top: 44px;
   margin-top: 4.4rem;
-}
-
-/*
- * Stack object
- * ------------
- *
- * Remove standard list styling and stack list items.
- *
- *     <ul class="stack">
- *         <li> ... </li>
- *         <li> ... </li>
- *     </ul>
- */
-.stack {
-  padding-left: 0;
-  list-style: none;
-}
-.stack > li, .stack > li > a {
-  display: block;
-}
-
-/*
- * Table object
- * ------------
- *
- * Style a table.
- *
- *     <table class="table">
- *         ...
- *     </table>
- */
-.table {
-  border-bottom: 1px solid #bdbdbd;
-  border-right: 1px solid #bdbdbd;
-}
-.table th {
-  background-color: #d6d6d6;
-}
-.table td, .table th {
-  border-top: 1px solid #bdbdbd;
-  border-left: 1px solid #bdbdbd;
-}
-.table tfoot td, .table tfoot th {
-  border-top: 2px solid #bdbdbd;
-}
-
-/*
- * Wide Table object
- * -----------------
- *
- * Style a table to always stretch to the full width of
- * the containing element. Dependent on the Table object.
- *
- *     <table class="table table-wide">
- *         ...
- *     </table>
- */
-.table-wide {
-  width: 100%;
-}
-
-/*
- * Striped Table object
- * --------------------
- *
- * Style a table with alternating row colours.
- * Dependent on the Table object.
- *
- *     <table class="table table-stripe">
- *         ...
- *     </table>
- */
-.table-stripe tbody tr:nth-child(even) td,
-.table-stripe-col tbody tr td:nth-child(odd) {
-  background-color: #f0f0f0;
 }
 
 /*

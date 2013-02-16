@@ -20,17 +20,23 @@
 @import "util/inline-block";
 @import "util/type";
 
-// CSS Objects
-@import "object/blocknav";
+// Utility objects
 @import "object/clearfix";
+
+// List objects
+@import "object/blocknav";
+@import "object/nav";
+@import "object/stack";
+
+// Data objects
+@import "object/table";
+
+// Type objects
 @import "object/cramp";
 @import "object/indent";
-@import "object/nav";
 @import "object/quote";
 @import "object/smallprint";
 @import "object/space";
-@import "object/stack";
-@import "object/table";
 @import "object/textbox";
 
 // Core typography
