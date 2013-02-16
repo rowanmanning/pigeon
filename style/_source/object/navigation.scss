@@ -20,7 +20,7 @@
         background-color: $c-lilac;
     }
 
-    @media all and (min-width: 680px) {
+    @media all and (min-width: $frag-break-bravo) {
         text-align: left;
 
         a {

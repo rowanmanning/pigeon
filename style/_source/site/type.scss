@@ -33,7 +33,7 @@ hr {
 }
 
 // Non-mobile
-@media all and (min-width: 680px) {
+@media all and (min-width: $frag-break-bravo) {
 
     // Headings
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
