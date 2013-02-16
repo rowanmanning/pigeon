@@ -17,118 +17,124 @@ $pigeon-type-size: 16px;
 {% endhighlight %}
 
 
-<h2 class="space-above-2">Available Configurations</h2>
+<div id="configurations" class="section space-above-2 textbox">
+    <h2>Available Configurations</h2>
 
-<table class="table table-wide table-stripe smallprint">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Default</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td>$pigeon-type-color</td>
-            <td>The default colour for all typography</td>
-            <td>#333</td>
-        </tr>
+    <table class="table table-wide table-stripe smallprint">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Default</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>$pigeon-type-color</td>
+                <td>The default colour for all typography</td>
+                <td>#333</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-type-color-link</td>
-            <td>The colour of non-visited links</td>
-            <td>#4781ba</td>
-        </tr>
+            <tr>
+                <td>$pigeon-type-color-link</td>
+                <td>The colour of non-visited links</td>
+                <td>#4781ba</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-type-color-link-visited</td>
-            <td>The colour of visited links</td>
-            <td>#7f629c</td>
-        </tr>
+            <tr>
+                <td>$pigeon-type-color-link-visited</td>
+                <td>The colour of visited links</td>
+                <td>#7f629c</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-type-color-highlight</td>
-            <td>The background colour of <code>mark</code> elements</td>
-            <td>#ff9</td>
-        </tr>
+            <tr>
+                <td>$pigeon-type-color-highlight</td>
+                <td>The background colour of <code>mark</code> elements</td>
+                <td>#ff9</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-type-size</td>
-            <td>The default type size.<br/>This gets set in <code>px</code> and <code>rem</code></td>
-            <td>18px</td>
-        </tr>
+            <tr>
+                <td>$pigeon-type-size</td>
+                <td>The default type size.<br/>This gets set in <code>px</code> and <code>rem</code></td>
+                <td>18px</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-type-size-incrementor</td>
-            <td>See <a href="#type-sizing">Type Sizing</a></td>
-            <td>2px</td>
-        </tr>
+            <tr>
+                <td>$pigeon-type-size-incrementor</td>
+                <td>See <a href="#type-sizing">Type Sizing</a></td>
+                <td>2px</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-type-size-accumulator</td>
-            <td>See <a href="#type-sizing">Type Sizing</a></td>
-            <td>0.5px</td>
-        </tr>
+            <tr>
+                <td>$pigeon-type-size-accumulator</td>
+                <td>See <a href="#type-sizing">Type Sizing</a></td>
+                <td>0.5px</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-type-line-height</td>
-            <td>The default line height.<br/>This gets set in <code>px</code> and <code>rem</code></td>
-            <td>22px</td>
-        </tr>
+            <tr>
+                <td>$pigeon-type-line-height</td>
+                <td>The default line height.<br/>This gets set in <code>px</code> and <code>rem</code></td>
+                <td>22px</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-type-weight-heading</td>
-            <td>The font weight for headings</td>
-            <td>normal</td>
-        </tr>
+            <tr>
+                <td>$pigeon-type-weight-heading</td>
+                <td>The font weight for headings</td>
+                <td>normal</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-type-face</td>
-            <td>The type face for non-heading typography</td>
-            <td>Arial, Helvetica, sans-serif</td>
-        </tr>
+            <tr>
+                <td>$pigeon-type-face</td>
+                <td>The type face for non-heading typography</td>
+                <td>Arial, Helvetica, sans-serif</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-type-face-heading</td>
-            <td>The type face for headings</td>
-            <td>$pigeon-type-face</td>
-        </tr>
+            <tr>
+                <td>$pigeon-type-face-heading</td>
+                <td>The type face for headings</td>
+                <td>$pigeon-type-face</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-nav-delimiter</td>
-            <td>The delimiter to use for the <code>nav-delim</code> object</td>
-            <td>", "</td>
-        </tr>
+            <tr>
+                <td>$pigeon-nav-delimiter</td>
+                <td>The delimiter to use for the <code>nav-delim</code> object</td>
+                <td>", "</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-table-color</td>
-            <td>The colour to use for tables.<br/>This is used indirectly to calculate other colours</td>
-            <td>#d6d6d6</td>
-        </tr>
+            <tr>
+                <td>$pigeon-table-color</td>
+                <td>The colour to use for tables.<br/>This is used indirectly to calculate other colours</td>
+                <td>#d6d6d6</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-table-color-border</td>
-            <td>The colour to use for table borders</td>
-            <td>darken($pigeon-table-color, 10%)</td>
-        </tr>
+            <tr>
+                <td>$pigeon-table-color-border</td>
+                <td>The colour to use for table borders</td>
+                <td>darken($pigeon-table-color, 10%)</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-table-color-header</td>
-            <td>The colour to use for table header cells</td>
-            <td>$pigeon-table-color</td>
-        </tr>
+            <tr>
+                <td>$pigeon-table-color-header</td>
+                <td>The colour to use for table header cells</td>
+                <td>$pigeon-table-color</td>
+            </tr>
 
-        <tr>
-            <td>$pigeon-table-color-stripe</td>
-            <td>The colour to use for striped table rows/cols</td>
-            <td>lighten($pigeon-table-color, 10%)</td>
-        </tr>
+            <tr>
+                <td>$pigeon-table-color-stripe</td>
+                <td>The colour to use for striped table rows/cols</td>
+                <td>lighten($pigeon-table-color, 10%)</td>
+            </tr>
 
-    </tbody>
-</table>
+        </tbody>
+    </table>
+
+</div>
 
 
-<h2 id="type-sizing" class="space-above-2">Type Sizing</h2>
+<div id="type-sizing" class="section space-above-2 textbox">
+    <h2>Type Sizing</h2>
 
-<p>TODO</p>
+    <p>TODO</p>
+
+</div>
