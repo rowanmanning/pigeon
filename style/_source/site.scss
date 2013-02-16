@@ -26,7 +26,9 @@ $pigeon-table-color-stripe: #f8f0e7;
 @import "vendor/rowanmanning/frag/grid/default/grid";
 
 // Objects
+@import "object/css-object";
 @import "object/noisy";
+@import "object/section";
 @import "object/swatch";
 
 // Site styles

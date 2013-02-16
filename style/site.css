@@ -1172,8 +1172,20 @@ caption {
     clear: none;
   }
 }
+.css-object {
+  margin-top: 66px;
+  margin-top: 6.6rem;
+  border-top: 5px dotted #eadbcd;
+}
+
 .noisy, .swatch, html, body:before, .wrapper:before {
   background-image: url("assets/100-65-5.png");
+}
+
+.section {
+  margin-top: 88px;
+  margin-top: 8.8rem;
+  border-top: 5px solid #eadbcd;
 }
 
 .swatches {

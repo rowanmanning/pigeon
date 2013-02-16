@@ -1,0 +1,6 @@
+
+// Page section
+.section {
+    @include rem("margin-top", ($pigeon-type-line-height * 4));
+    border-top: 5px solid $c-cream-dk;
+}
