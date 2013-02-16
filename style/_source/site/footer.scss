@@ -1,0 +1,8 @@
+
+// Footer styles
+.footer {
+    @include rem('padding-top', ($pigeon-type-line-height * 4));
+    &, & a, & a:visited {
+        color: $c-grey;
+    }
+}

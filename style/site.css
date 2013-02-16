@@ -1313,6 +1313,14 @@ pre code {
   color: #ccaaee;
 }
 
+.footer {
+  padding-top: 88px;
+  padding-top: 8.8rem;
+}
+.footer, .footer a, .footer a:visited {
+  color: #747474;
+}
+
 html {
   min-height: 100%;
   background-color: #fffaf5;
