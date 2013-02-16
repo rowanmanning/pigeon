@@ -136,6 +136,21 @@ $pigeon-type-size: 16px;
 <div id="type-sizing" class="section textbox">
     <h2>Type Sizing</h2>
 
-    <p>TODO</p>
+    <p>
+        Type sizing in Pigeon is all calculated from a single base size,
+        <code>$pigeon-type-size</code>. The way this is calculated is by
+        looping a specific number of times, each time adding
+        <code>$pigeon-type-size-incrementor</code>. On each iteration, the
+        <code>$pigeon-type-size-incrementor</code> variable is incremented
+        itself by the value of <code>$pigeon-type-size-accumulator</code>.
+    </p>
+
+    <p>
+        I realise this sounds confusing as hell. I'll improve these docs at some
+        point, but in the meantime have a look at
+        <a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/util/type.scss">lib/util/type.scss</a>
+        and
+        <a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/util/accum-inc.scss">lib/util/accum-inc.scss</a>.
+    </p>
 
 </div>
