@@ -4,3 +4,42 @@ layout: page
 ---
 
 <h1>Installation</h1>
+
+<p>
+    You can use Pigeon in a couple of different ways, depending on the way your
+    site is being developed.
+</p>
+
+
+<h2 class="space-above-2">Plain CSS</h2>
+
+<p>
+    If you're just writing vanilla CSS, then you can simply include
+    <a href="https://raw.github.com/rowanmanning/pigeon/master/build/pigeon.css">pigeon.css</a>
+    or <a href="https://raw.github.com/rowanmanning/pigeon/master/build/pigeon.min.css">pigeon.min.css</a>
+    in your page above your own styles.
+</p>
+
+<p>
+    If you need to customise pigeon, you can do so by tweaking
+    <a href="https://github.com/rowanmanning/pigeon/blob/master/lib/defaults.scss">the default variables</a>
+    and rebuilding the CSS.
+</p>
+
+
+<h2 class="space-above-2">Sass</h2>
+
+<p>
+    If you're already using Sass with your project, then you can include Pigeon
+    directly. This is simple; assuming you have the Pigeon source code in
+    the <code>vendor/pigeon</code> folder:
+</p>
+
+{% highlight scss %}
+@import "vendor/pigeon/lib/pigeon";
+{% endhighlight %}
+
+<p>
+    If you wish to customise Pigeon, you can do so using Sass variables. You can
+    find <a href="/docs/config/">documentation for customising Pigeon here</a>.
+</p>
