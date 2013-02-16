@@ -1,0 +1,251 @@
+---
+title: CSS Objects - Pigeon Documentation
+layout: page
+---
+
+<h1>CSS Objects</h1>
+
+
+<div id="typography" class="section space-above-2 textbox">
+    <h2>Type Objects</h2>
+
+    <p>
+        Pigeon exposes a number of objects to help with laying out type. These
+        objects are all extended by the default type styles to offer a more
+        consistent way of laying out type.
+    </p>
+
+    <div id="typography-space" class="textbox css-object">
+        <h3>
+            <a href="#typography-space" class="section-link">Space</a>
+        </h3>
+
+        <p>The <code>space</code> object…</p>
+
+        <div class="css-example">
+            {% highlight html %}<div class="space">
+    This text is spaced as if it were inside a paragraph.
+</div>{% endhighlight %}
+        </div>
+
+        <div class="css-example">
+            {% highlight html %}<p class="space-above">
+    This text has space above it as well as below.
+</p>{% endhighlight %}
+        </div>
+
+        <div class="css-example">
+            {% highlight html %}<p class="space-2 space-above-2">
+    This text has double spacing above and below.
+</p>{% endhighlight %}
+        </div>
+
+    </div>
+
+    <div id="typography-cramp" class="textbox css-object">
+        <h3>
+            <a href="#typography-cramp" class="section-link">Cramp</a>
+        </h3>
+
+        <p>The <code>cramp</code> object…</p>
+
+        <div class="css-example">
+            {% highlight html %}<p class="cramp">
+    This text has no space around it.
+</p>{% endhighlight %}
+        </div>
+
+    </div>
+
+    <div id="typography-textbox" class="textbox css-object">
+        <h3>
+            <a href="#typography-textbox" class="section-link">Textbox</a>
+        </h3>
+
+        <p>The <code>textbox</code> object…</p>
+
+        <div class="css-example">
+            {% highlight html %}<div class="textbox">
+    <p>The containing div is padded…</p>
+    <p>…which means type inside flows nicely.</p>
+</div>{% endhighlight %}
+        </div>
+
+    </div>
+
+    <div id="typography-indent" class="textbox css-object">
+        <h3>
+            <a href="#typography-indent" class="section-link">Indent</a>
+        </h3>
+
+        <p>The <code>indent</code> object…</p>
+
+        <div class="css-example">
+            {% highlight html %}<p class="indent">
+    This text is indented.
+</p>{% endhighlight %}
+        </div>
+
+    </div>
+
+    <div id="typography-hn" class="textbox css-object">
+        <h3>
+            <a href="#typography-hn" class="section-link">H1–H6</a>
+        </h3>
+
+        <p>The <code>h1–h6</code> objects…</p>
+
+        <div class="css-example">
+            {% highlight html %}<h3 class="h1">
+    This h3 looks like a h1.
+</h3>{% endhighlight %}
+        </div>
+
+    </div>
+
+    <div id="typography-smallprint" class="textbox css-object">
+        <h3>
+            <a href="#typography-smallprint" class="section-link">Smallprint</a>
+        </h3>
+
+        <p>The <code>smallprint</code> object…</p>
+
+        <div class="css-example">
+            {% highlight html %}<p class="smallprint">
+    This text is smaller than normal.
+</p>{% endhighlight %}
+        </div>
+
+    </div>
+
+    <div id="typography-quote" class="textbox css-object">
+        <h3>
+            <a href="#typography-quote" class="section-link">Quote</a>
+        </h3>
+
+        <p>The <code>quote</code> object…</p>
+
+        <div class="css-example">
+            {% highlight html %}<blockquote class="quote">
+    <p class="quote-body">Hello World!</p>
+    <p class="quote-attrib">Someone in <cite>Work</cite></p>
+</blockquote>{% endhighlight %}
+        </div>
+
+    </div>
+
+</div>
+
+
+<div id="lists" class="section space-above-2 textbox">
+    <h2>List Objects</h2>
+
+    <div id="lists-stack" class="textbox css-object">
+        <h3>
+            <a href="#lists-stack" class="section-link">Stack</a>
+        </h3>
+
+        <p>The <code>stack</code> object…</p>
+
+        <div class="css-example">
+            {% highlight html %}<ul class="stack">
+    <li>This list looks just like…</li>
+    <li>…a stack of divs.</li>
+</ul>{% endhighlight %}
+        </div>
+
+    </div>
+
+    <div id="lists-nav" class="textbox css-object">
+        <h3>
+            <a href="#lists-nav" class="section-link">Nav</a>
+        </h3>
+
+        <p>The <code>nav</code> object…</p>
+
+        <div class="css-example">
+            {% highlight html %}<ul class="nav">
+    <li>This list looks just like…</li>
+    <li>…spans side by side.</li>
+</ul>{% endhighlight %}
+        </div>
+
+        <div class="css-example">
+            {% highlight html %}<ul class="nav nav-delim">
+    <li>These list items</li>
+    <li>will be</li>
+    <li>comma delimited</li>
+</ul>{% endhighlight %}
+        </div>
+
+    </div>
+
+    <div id="lists-blocknav" class="textbox css-object">
+        <h3>
+            <a href="#lists-blocknav" class="section-link">Blocknav</a>
+        </h3>
+
+        <p>The <code>blocknav</code> object…</p>
+
+        <div class="css-example">
+            {% highlight html %}<ul class="blocknav">
+    <li>This is a list…</li>
+    <li>…of floated blocks.</li>
+</ul>{% endhighlight %}
+        </div>
+
+    </div>
+
+</div>
+
+
+<div id="data" class="section space-above-2 textbox">
+    <h2>Data Objects</h2>
+
+    <div id="data-table" class="textbox css-object">
+        <h3>
+            <a href="#data-table" class="section-link">Table</a>
+        </h3>
+
+        <p>The <code>table</code> object…</p>
+
+        <div class="css-example">
+            {% highlight html %}<table class="table">
+    <tr>
+        <td>This table is styled…</td>
+        <td>…for optimal presentation…</td>
+        <td>…of tabular data.</td>
+    </tr>
+</table>{% endhighlight %}
+        </div>
+
+        <div class="css-example">
+            {% highlight html %}<table class="table table-wide">
+    <tr>
+        <td>This table spans the…</td>
+        <td>…full width of its container.</td>
+    </tr>
+</table>{% endhighlight %}
+        </div>
+
+        <div class="css-example">
+            {% highlight html %}<table class="table table-stripe">
+    <tr>
+        <td>This table has…</td>
+        <td>…striped rows.</td>
+    </tr>
+</table>{% endhighlight %}
+        </div>
+
+        <div class="css-example">
+            {% highlight html %}<table class="table table-stripe-col">
+    <tr>
+        <td>This table has…</td>
+        <td>…striped columns.</td>
+    </tr>
+</table>{% endhighlight %}
+        </div>
+
+    </div>
+
+</div>
