@@ -626,18 +626,18 @@ table {
  *     </table>
  */
 .table {
-  border-bottom: 1px solid #bdbdbd;
-  border-right: 1px solid #bdbdbd;
+  border-bottom: 1px solid #dbc1a9;
+  border-right: 1px solid #dbc1a9;
 }
 .table th {
-  background-color: #d6d6d6;
+  background-color: #eadbcd;
 }
 .table td, .table th {
-  border-top: 1px solid #bdbdbd;
-  border-left: 1px solid #bdbdbd;
+  border-top: 1px solid #dbc1a9;
+  border-left: 1px solid #dbc1a9;
 }
 .table tfoot td, .table tfoot th {
-  border-top: 2px solid #bdbdbd;
+  border-top: 2px solid #dbc1a9;
 }
 
 /*
@@ -668,7 +668,7 @@ table {
  */
 .table-stripe tbody tr:nth-child(even) td,
 .table-stripe-col tbody tr td:nth-child(odd) {
-  background-color: #f0f0f0;
+  background-color: #f8f0e7;
 }
 
 /*
@@ -821,7 +821,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 22px;
@@ -1215,6 +1215,16 @@ caption {
   background-color: #4781ba;
 }
 
+pre, code {
+  font-family: Consolas, "Lucida Console", Monaco, monospace;
+}
+
+code {
+  padding: 0 4px;
+  background: #f0e7de;
+  border: 1px solid #eadbcd;
+}
+
 .highlight {
   padding: 22px;
   padding: 2.2rem;
@@ -1225,6 +1235,12 @@ caption {
 
 .highlight pre {
   margin-bottom: 0;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  border: none;
 }
 
 .highlight .html .nt, .highlight .html .na {
@@ -1265,4 +1281,30 @@ body:before {
   margin-right: auto;
   padding-top: 60px;
   padding-top: 6rem;
+}
+
+h1 a, h1 a:visited, .h1 a, .h1 a:visited, h2 a, h2 a:visited, .h2 a, .h2 a:visited, h3 a, h3 a:visited, .h3 a, .h3 a:visited, h4 a, h4 a:visited, .h4 a, .h4 a:visited, h5 a, h5 a:visited, .h5 a, .h5 a:visited, h6 a, h6 a:visited, .h6 a, .h6 a:visited {
+  color: #333333;
+  text-decoration: none;
+}
+
+dt, th {
+  font-weight: normal;
+}
+
+hr {
+  height: 0;
+  border: none;
+  border-top: 5px solid #eadbcd;
+  color: #eadbcd;
+}
+
+::-moz-selection {
+  background: #7f629c;
+  color: #fff;
+}
+
+::selection {
+  background: #7f629c;
+  color: #fff;
 }

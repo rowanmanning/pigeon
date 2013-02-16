@@ -1,4 +1,9 @@
 
+// Variables: type
+$t-family: Verdana, Geneva, Tahoma, sans-serif;
+$t-family-heading: "Varela Round", Verdana, Geneva, Tahoma, sans-serif;
+$t-family-mono: Consolas, "Lucida Console", Monaco, monospace;
+
 // Variables: colour
 $c-cream: #fffaf5;
 $c-cream-dk: #eadbcd;
@@ -10,7 +15,10 @@ $c-grey: #747474;
 $c-grey-dk: #333;
 
 // Pigeon config
-$pigeon-type-face-heading: "Varela Round", Verdana, Geneva, Tahoma, sans-serif;
+$pigeon-type-face: $t-family;
+$pigeon-type-face-heading: $t-family-heading;
+$pigeon-table-color: $c-cream-dk;
+$pigeon-table-color-stripe: #f8f0e7;
 
 // Vendor styles
 @import "vendor/necolas/normalize";
@@ -25,3 +33,4 @@ $pigeon-type-face-heading: "Varela Round", Verdana, Geneva, Tahoma, sans-serif;
 @import "site/code";
 @import "site/glitter";
 @import "site/layout";
+@import "site/type";

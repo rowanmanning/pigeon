@@ -1,0 +1,31 @@
+
+// Links in headers
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    a, a:visited {
+        color: $c-grey-dk;
+        text-decoration: none;
+    }
+}
+
+// Overrides – non-bold font for any custom fonts
+dt, th {
+    font-weight: normal;
+}
+
+// Rules
+hr {
+    height: 0;
+    border: none;
+    border-top: 5px solid $c-cream-dk;
+    color: $c-cream-dk;
+}
+
+// selection
+::-moz-selection {
+    background: $c-lilac-dk;
+    color: #fff;
+}
+::selection {
+    background: $c-lilac-dk;
+    color: #fff;
+}
