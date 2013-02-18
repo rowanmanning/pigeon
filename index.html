@@ -7,9 +7,9 @@ layout: page
 <h1>{{ page.title }}</h1>
 
 <p>
-    {{ page.description }}
-    Pigeon is easy to use and <a href="/docs/config/">highly configurable</a>,
-    you can use it with either plain CSS or Sass.
+    Pigeon is an <a href="http://oocss.org/">OOCSS</a> framework for rapid prototyping and building
+    smart, scalable websites. Pigeon is easy to use and
+    <a href="/docs/config/">highly configurable</a>, you can use it with either plain CSS or Sass.
 </p>
 
 <p>
@@ -29,3 +29,42 @@ layout: page
 </ul>
 
 <p>Pigeon's source code is <a href="{{ site.repo.url }}">hosted on GitHub</a>.</p>
+
+
+<div id="why" class="section textbox">
+    <h2>Why Pigeon?</h2>
+
+    <p>
+        Pigeon was originally thought up as a simple way for me to manage my own set of common OOCSS
+        classes. It soon became apparent that it was difficult to use these classes in isolation
+        without any kind of base typography for the page. I also found that I was hacking around the
+        code in each separate project to tweak spacings of elements, I wanted this to be more
+        configurable.
+    </p>
+
+    <p>
+        Pigeon aims to tackle my original problem by providing a simple set of CSS objects for
+        laying out typography and simple components. It accepts
+        <a href="/docs/config">configurations through Sass variables</a> which means it can be
+        included in a project and updated freely without touching your site's code.
+    </p>
+
+</div>
+
+
+<div id="why-not" class="section textbox">
+    <h2>What Pigeon Isn't</h2>
+
+    <p>
+        Pigeon doesn't dictate design for you, or provide stylistic classes. That's your job.
+        If you're looking for a more full design/CSS framework, I recommend looking into
+        <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> or
+        <a href="http://foundation.zurb.com/">Zurb Foundation</a>.
+    </p>
+
+    <p>
+        Pigeon doesn't provide a grid system. If you're looking for one with a similar style,
+        I recommend <a href="http://frag.rowanmanning.com/">Frag – a fluid, responsive grid system for CSS</a>.
+    </p>
+
+</div>
