@@ -1,16 +1,16 @@
 
 /*
- * Textbox object
- * --------------
+ * Typearea object
+ * ---------------
  *
  * Pads an element to optimize type spacing.
  *
- *     <div class="textbox">
+ *     <div class="typearea">
  *         <p> ... </p>
  *         <p> ... </p>
  *     </div>
  */
-.textbox {
+.typearea {
     display: block;
     @include rem("padding-top", $pigeon-type-line-height);
 }
