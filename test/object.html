@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+
+    <meta charset="utf-8"/>
+    <title>Object - Pigeon Style Testing</title>
+
+    <link rel="stylesheet" href="../build/pigeon.css"/>
+    <style>
+        body { padding: 40px; }
+        .demo { padding: 20px; background-color: #eee; border-radius: 20px; }
+        .demo-border { border: 5px dotted #7f629c; }
+    </style>
+
+</head>
+<body>
+
+
+    <h1>Object - Pigeon Style Testing</h1>
+
+
+    <div class="typearea space-above-2">
+
+        <h2>Space</h2>
+
+        <p>
+            The spacing between all the elements below should be equal.
+        </p>
+
+        <div class="space demo">
+            
+            <p>Paragraph</p>
+
+            <div class="space">Div</div>
+
+            <p class="cramp">Paragraph</p>
+
+            <div class="space-above">Div</div>
+
+        </div>
+
+        <p>
+            The spacing between all the elements below should be doubled.
+        </p>
+
+        <div class="demo">
+            
+            <p class="space-2">Paragraph</p>
+
+            <p>Paragraph</p>
+
+            <p class="cramp space-above-2">Paragraph</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+        
+        <h2>Cramp</h2>
+
+        <p>
+            There should be no spacing between the elements below.
+        </p>
+
+        <div class="demo">
+            
+            <p class="cramp">Paragraph</p>
+
+            <div>Div</div>
+
+            <p class="cramp">Paragraph</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+        
+        <h2>Typearea</h2>
+
+        <p>
+            All spaces in the dotted box below should be equal, including those
+            before the first paragraph and after the last.
+        </p>
+
+        <div class="demo">
+            
+            <div class="typearea demo-border">
+                <p>Paragraph</p>
+                <p>Paragraph</p>
+                <p>Paragraph</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+        
+        <h2>Indent</h2>
+
+        <p>
+            Each of the paragraphs below should be indented more than their
+            previous sibling.
+        </p>
+
+        <div class="demo">
+            
+            <p>Paragraph</p>
+
+            <p class="indent">Paragraph</p>
+
+            <p class="cramp indent-2">Paragraph</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+        
+        <h2>H1-h6</h2>
+
+        <p>
+            Each of the pairs of headings below should look the same.
+        </p>
+
+        <div class="demo">
+            
+            <h1 class="cramp">Heading 1</h1>
+            <p class="h1">Paragraph</p>
+
+            <h2 class="cramp">Heading 2</h2>
+            <p class="h2">Paragraph</p>
+
+            <h3 class="cramp">Heading 3</h3>
+            <p class="h3">Paragraph</p>
+
+            <h4 class="cramp">Heading 4</h4>
+            <p class="h4">Paragraph</p>
+
+            <h5 class="cramp">Heading 5</h5>
+            <p class="h5">Paragraph</p>
+
+            <h6 class="cramp">Heading 6</h6>
+            <p class="h6">Paragraph</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+        
+        <h2>Smallprint</h2>
+
+        <p>
+            The second paragraph below should be smaller than normal.
+        </p>
+
+        <div class="demo">
+
+            <p>Paragraph</p>
+
+            <p class="cramp smallprint">Paragraph</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+        
+        <h2>Quote</h2>
+
+        <p>
+            The quotes below should display acceptably, and have the correct
+            body and attribution styles. Quote marks and dashes do not need to
+            display in legacy browsers.
+        </p>
+
+        <div class="demo">
+            
+            <blockquote class="quote">
+                <p class="quote-body">Blockquote > Paragraph</p>
+                <p class="quote-attrib">Paragraph <cite>Citation</cite></p>
+            </blockquote>
+
+            <div class="cramp quote">
+                <div class="quote-body">Div > Div</div>
+                <div class="quote-attrib">Div <cite>Citation</cite></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+        
+        <h2>Stack</h2>
+
+        <p>
+            The list items below should have no spacing between them and should
+            stack vertically.
+        </p>
+
+        <div class="demo">
+            
+            <ul class="cramp stack">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+        
+        <h2>Nav</h2>
+
+        <p>
+            The list items below should display side-by-side as if they are
+            spans in a paragraph.
+        </p>
+
+        <div class="space demo">
+            
+            <ul class="cramp nav">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+
+        </div>
+
+        <p>
+            The list items below should be comma-delimited. The commas do not
+            need to display in legacy browsers, and there may be a trailing
+            comma in IE8.
+        </p>
+
+        <div class="demo">
+            
+            <ul class="cramp nav nav-delim">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+        
+        <h2>Blocknav</h2>
+
+        <p>
+            The list items below should display side-by-side with no spacing
+            between them. There should be a space between the list and the
+            paragraph.
+        </p>
+
+        <div class="demo">
+            
+            <ul class="blocknav">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+
+            <p class="cramp">Paragraph</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+
+        <h2>Table</h2>
+
+        <p>
+            The tables below should display acceptably, and have the correct
+            caption, header, row/cell and footer styles. Stripes do not have to
+            display in legacy browsers.
+        </p>
+
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Color</th>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>Green</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Yellow</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>Orange</td>
+            </tr>
+        </table>
+
+        <table class="table table-stripe">
+            <caption>This is a striped table with a head/body/foot</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Color</th>
+                    <th>Calories</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">Total</th>
+                    <td>249.3</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Apple</td>
+                    <td>Green</td>
+                    <td>53</td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td>96.9</td>
+                </tr>
+                <tr>
+                    <td>Orange</td>
+                    <td>Orange</td>
+                    <td>99.4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-stripe-col">
+            <caption>This is a row-based table with striped columns</caption>
+            <colgroup>
+                <col/>
+                <col span="2"/>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">Name</th>
+                    <td>Apple</td>
+                    <td>Banana</td>
+                    <td>Orange</td>
+                </tr>
+                <tr>
+                    <th scope="row">Color</th>
+                    <td>Green</td>
+                    <td>Yellow</td>
+                    <td>Orange</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <div class="typearea space-above-2">
+        
+        <h2>Clearfix</h2>
+
+        <p>
+            The divs below should stack vertically
+        </p>
+
+        <div class="demo">
+            
+            <div class="clearfix">
+                <div style="float: left;">Div</div>
+            </div>
+
+            <div class="clearfix">
+                <div style="float: left;">Div</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
