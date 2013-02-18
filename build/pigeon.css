@@ -722,7 +722,7 @@ table {
   margin-right: 0;
 }
 
-.quote-body {
+.quote-body, .quote-attrib {
   margin-top: 0;
   margin-bottom: 0;
 }
