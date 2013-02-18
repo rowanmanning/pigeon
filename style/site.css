@@ -799,17 +799,17 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table, .highlight {
 }
 
 /*
- * Textbox object
- * --------------
+ * Typearea object
+ * ---------------
  *
  * Pads an element to optimize type spacing.
  *
- *     <div class="textbox">
+ *     <div class="typearea">
  *         <p> ... </p>
  *         <p> ... </p>
  *     </div>
  */
-.textbox {
+.typearea {
   display: block;
   padding-top: 22px;
   padding-top: 2.2rem;
