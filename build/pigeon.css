@@ -841,42 +841,42 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
   font-weight: normal;
 }
 
-h6 {
+h6, .h6 {
   font-size: 20px;
   font-size: 2rem;
   line-height: 24px;
   line-height: 2.4rem;
 }
 
-h5 {
+h5, .h5 {
   font-size: 22px;
   font-size: 2.2rem;
   line-height: 26px;
   line-height: 2.6rem;
 }
 
-h4 {
+h4, .h4 {
   font-size: 25px;
   font-size: 2.5rem;
   line-height: 29px;
   line-height: 2.9rem;
 }
 
-h3 {
+h3, .h3 {
   font-size: 28px;
   font-size: 2.8rem;
   line-height: 32px;
   line-height: 3.2rem;
 }
 
-h2 {
+h2, .h2 {
   font-size: 32px;
   font-size: 3.2rem;
   line-height: 36px;
   line-height: 3.6rem;
 }
 
-h1 {
+h1, .h1 {
   font-size: 36px;
   font-size: 3.6rem;
   line-height: 40px;
