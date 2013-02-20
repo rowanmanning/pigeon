@@ -547,10 +547,10 @@ table {
   padding-left: 0;
   list-style: none;
 }
-.blocknav > li {
+.blocknav > li, .blocknav > .item {
   float: left;
 }
-.blocknav > li, .blocknav > li > a {
+.blocknav > li, .blocknav > li > a, .blocknav > .item, .blocknav > .item > a {
   display: block;
 }
 
@@ -570,28 +570,28 @@ table {
   padding-left: 0;
   list-style: none;
 }
-.nav > li, .nav > li > a {
+.nav > li, .nav > li > a, .nav > .item, .nav > .item > a {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
 
 /*
- * Delimited Nav object
- * --------------------
+ * Nav object Delimited modifier
+ * -----------------------------
  *
  * Add a delimiter to list items. Dependent on the
  * Nav object.
  *
- *     <ul class="nav nav-delim">
+ *     <ul class="nav nav-is-delimited">
  *         <li> ... </li>
  *         <li> ... </li>
  *     </ul>
  */
-.nav-delim > li:after {
+.nav-is-delimited > li:after, .nav-is-delimited > .item:after {
   content: ", ";
 }
-.nav-delim > li:last-child:after {
+.nav-is-delimited > li:last-child:after, .nav-is-delimited > .item:last-child:after {
   content: "";
   display: none;
 }
@@ -611,7 +611,7 @@ table {
   padding-left: 0;
   list-style: none;
 }
-.stack > li, .stack > li > a {
+.stack > li, .stack > li > a, .stack > .item, .stack > .item > a {
   display: block;
 }
 
@@ -641,33 +641,32 @@ table {
 }
 
 /*
- * Wide Table object
- * -----------------
+ * Table object Wide modifier
+ * --------------------------
  *
  * Style a table to always stretch to the full width of
  * the containing element. Dependent on the Table object.
  *
- *     <table class="table table-wide">
+ *     <table class="table table-is-wide">
  *         ...
  *     </table>
  */
-.table-wide {
+.table-is-wide {
   width: 100%;
 }
 
 /*
- * Striped Table object
- * --------------------
+ * Table object Striped modifier
+ * -----------------------------
  *
  * Style a table with alternating row colours.
  * Dependent on the Table object.
  *
- *     <table class="table table-stripe">
+ *     <table class="table table-is-striped">
  *         ...
  *     </table>
  */
-.table-stripe tbody tr:nth-child(even) td,
-.table-stripe-col tbody tr td:nth-child(odd) {
+.table-is-striped tbody tr:nth-child(even) td {
   background-color: #f8f0e7;
 }
 
@@ -682,6 +681,38 @@ table {
 .cramp {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/*
+ * Fig object
+ * ----------
+ *
+ * Floats an element to sit alongside text and adds margins
+ * to aid legibility. Extends the `space` object.
+ *
+ *     <img src="..." alt="..." class="fig"/>
+ */
+.fig {
+  margin-right: 22px;
+  margin-right: 2.2rem;
+  display: block;
+  float: left;
+}
+
+/*
+ * Fig Alt object
+ * --------------
+ *
+ * Floats an element to sit opposite text and adds margins
+ * to aid legibility. Extends the `space` object.
+ *
+ *     <img src="..." alt="..." class="fig-alt"/>
+ */
+.fig-alt {
+  margin-left: 22px;
+  margin-left: 2.2rem;
+  display: block;
+  float: right;
 }
 
 /*
@@ -768,7 +799,7 @@ table {
  *     <div class="space"> ... </div>
  *     <p> ... </p>
  */
-.space, p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
+.space, .fig, .fig-alt, p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
 blockquote, caption, dl, figure, ol, ul, hr, pre, table, .highlight {
   margin-bottom: 22px;
   margin-bottom: 2.2rem;
