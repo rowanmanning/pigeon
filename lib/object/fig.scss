@@ -1,0 +1,32 @@
+
+/*
+ * Fig object
+ * ----------
+ *
+ * Floats an element to sit alongside text and adds margins
+ * to aid legibility. Extends the `space` object.
+ *
+ *     <img src="..." alt="..." class="fig"/>
+ */
+.fig {
+    @extend .space;
+    @include rem("margin-right", $pigeon-type-line-height);
+    display: block;
+    float: left;
+}
+
+/*
+ * Fig Alt object
+ * --------------
+ *
+ * Floats an element to sit opposite text and adds margins
+ * to aid legibility. Extends the `space` object.
+ *
+ *     <img src="..." alt="..." class="fig-alt"/>
+ */
+.fig-alt {
+    @extend .space;
+    @include rem("margin-left", $pigeon-type-line-height);
+    display: block;
+    float: right;
+}
