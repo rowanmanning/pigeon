@@ -14,7 +14,7 @@
     padding-left: 0;
     list-style: none;
 
-    > li {
+    > li, > .item {
         &, > a {
             display: block;
         }

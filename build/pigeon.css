@@ -547,10 +547,10 @@ table {
   padding-left: 0;
   list-style: none;
 }
-.blocknav > li {
+.blocknav > li, .blocknav > .item {
   float: left;
 }
-.blocknav > li, .blocknav > li > a {
+.blocknav > li, .blocknav > li > a, .blocknav > .item, .blocknav > .item > a {
   display: block;
 }
 
@@ -570,7 +570,7 @@ table {
   padding-left: 0;
   list-style: none;
 }
-.nav > li, .nav > li > a {
+.nav > li, .nav > li > a, .nav > .item, .nav > .item > a {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -588,10 +588,10 @@ table {
  *         <li> ... </li>
  *     </ul>
  */
-.nav-delim > li:after {
+.nav-delim > li:after, .nav-delim > .item:after {
   content: ", ";
 }
-.nav-delim > li:last-child:after {
+.nav-delim > li:last-child:after, .nav-delim > .item:last-child:after {
   content: "";
   display: none;
 }
@@ -611,7 +611,7 @@ table {
   padding-left: 0;
   list-style: none;
 }
-.stack > li, .stack > li > a {
+.stack > li, .stack > li > a, .stack > .item, .stack > .item > a {
   display: block;
 }
 
