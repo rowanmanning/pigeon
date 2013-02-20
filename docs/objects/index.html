@@ -308,13 +308,13 @@ layout: page
         </div>
 
         <p>
-            The <code>nav-delim</code> extension is used alongside
+            The <code>nav-is-delimited</code> modifier is used alongside
             <code>nav</code> to add commas after each list item. This allows you
             to easily create comma-delimited lists with semantic meaning.
         </p>
 
         <div class="css-example">
-            {% highlight html %}<ul class="nav nav-delim">
+            {% highlight html %}<ul class="nav nav-is-delimited">
     <li>These list items</li>
     <li>will be</li>
     <li>comma delimited</li>
@@ -377,13 +377,13 @@ layout: page
         </div>
 
         <p>
-            The <code>table-wide</code> extension is used alongside
+            The <code>table-is-wide</code> modifier is used alongside
             <code>table</code> to make the table span the full width of its
             container.
         </p>
 
         <div class="css-example">
-            {% highlight html %}<table class="table table-wide">
+            {% highlight html %}<table class="table table-is-wide">
     <tr>
         <td>This table spans the…</td>
         <td>…full width of its container.</td>
@@ -392,23 +392,16 @@ layout: page
         </div>
 
         <p>
-            The <code>table-stripe</code> and <code>table-stripe-col</code>
-            extensions is used alongside <code>table</code> to style alternating
-            rows and columns differently. This makes large tables more readable.
+            The <code>table-is-striped</code> modifier is used alongside
+            <code>table</code> to style alternating rows differently. This makes
+            large tables more readable.
         </p>
 
         <div class="css-example">
-            {% highlight html %}<table class="table table-stripe">
+            {% highlight html %}<table class="table table-is-striped">
     <tr>
         <td>This table has…</td>
         <td>…striped rows.</td>
-    </tr>
-</table>
-
-<table class="table table-stripe-col">
-    <tr>
-        <td>This table has…</td>
-        <td>…striped columns.</td>
     </tr>
 </table>{% endhighlight %}
         </div>
