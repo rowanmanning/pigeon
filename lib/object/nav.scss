@@ -23,18 +23,18 @@
 }
 
 /*
- * Delimited Nav object
- * --------------------
+ * Nav object Delimited modifier
+ * -----------------------------
  *
  * Add a delimiter to list items. Dependent on the
  * Nav object.
  *
- *     <ul class="nav nav-delim">
+ *     <ul class="nav nav-is-delimited">
  *         <li> ... </li>
  *         <li> ... </li>
  *     </ul>
  */
-.nav-delim {
+.nav-is-delimited {
     > li, > .item {
         &:after {
             content: $pigeon-nav-delimiter;

@@ -577,21 +577,21 @@ table {
 }
 
 /*
- * Delimited Nav object
- * --------------------
+ * Nav object Delimited modifier
+ * -----------------------------
  *
  * Add a delimiter to list items. Dependent on the
  * Nav object.
  *
- *     <ul class="nav nav-delim">
+ *     <ul class="nav nav-is-delimited">
  *         <li> ... </li>
  *         <li> ... </li>
  *     </ul>
  */
-.nav-delim > li:after, .nav-delim > .item:after {
+.nav-is-delimited > li:after, .nav-is-delimited > .item:after {
   content: ", ";
 }
-.nav-delim > li:last-child:after, .nav-delim > .item:last-child:after {
+.nav-is-delimited > li:last-child:after, .nav-is-delimited > .item:last-child:after {
   content: "";
   display: none;
 }
@@ -641,33 +641,32 @@ table {
 }
 
 /*
- * Wide Table object
- * -----------------
+ * Table object Wide modifier
+ * --------------------------
  *
  * Style a table to always stretch to the full width of
  * the containing element. Dependent on the Table object.
  *
- *     <table class="table table-wide">
+ *     <table class="table table-is-wide">
  *         ...
  *     </table>
  */
-.table-wide {
+.table-is-wide {
   width: 100%;
 }
 
 /*
- * Striped Table object
- * --------------------
+ * Table object Striped modifier
+ * -----------------------------
  *
  * Style a table with alternating row colours.
  * Dependent on the Table object.
  *
- *     <table class="table table-stripe">
+ *     <table class="table table-is-striped">
  *         ...
  *     </table>
  */
-.table-stripe tbody tr:nth-child(even) td,
-.table-stripe-col tbody tr td:nth-child(odd) {
+.table-is-striped tbody tr:nth-child(even) td {
   background-color: #f0f0f0;
 }
 

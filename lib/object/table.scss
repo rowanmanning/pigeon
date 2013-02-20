@@ -31,32 +31,31 @@
 }
 
 /*
- * Wide Table object
- * -----------------
+ * Table object Wide modifier
+ * --------------------------
  *
  * Style a table to always stretch to the full width of
  * the containing element. Dependent on the Table object.
  *
- *     <table class="table table-wide">
+ *     <table class="table table-is-wide">
  *         ...
  *     </table>
  */
-.table-wide {
+.table-is-wide {
     width: 100%;
 }
 
 /*
- * Striped Table object
- * --------------------
+ * Table object Striped modifier
+ * -----------------------------
  *
  * Style a table with alternating row colours.
  * Dependent on the Table object.
  *
- *     <table class="table table-stripe">
+ *     <table class="table table-is-striped">
  *         ...
  *     </table>
  */
-.table-stripe tbody tr:nth-child(even) td,
-.table-stripe-col tbody tr td:nth-child(odd) {
+.table-is-striped tbody tr:nth-child(even) td {
     background-color: $pigeon-table-color-stripe;
 }
