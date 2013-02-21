@@ -531,6 +531,28 @@ table {
 }
 
 /*
+ * Hide object
+ * -----------
+ *
+ * Hides an element in a way that's accessible for screen
+ * readers and search engines.
+ *
+ *     <p class="hide"> ... </p>
+ */
+.hide {
+  position: absolute;
+  left: -9999px;
+  max-width: 999px;
+  overflow: hidden;
+}
+
+/* Right-to-left support */
+[dir=rtl] .hide {
+  left: auto;
+  right: -9999px;
+}
+
+/*
  * Blocknav object
  * ---------------
  *
