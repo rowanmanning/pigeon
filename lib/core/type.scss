@@ -88,3 +88,16 @@ q {
         content: "”";
     }
 }
+
+
+/* Selection */
+
+::-moz-selection {
+    background: $pigeon-selection-color-bg;
+    color: $pigeon-selection-color;
+}
+
+::selection {
+    background: $pigeon-selection-color-bg;
+    color: $pigeon-selection-color;
+}

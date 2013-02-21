@@ -4,6 +4,8 @@ $pigeon-type-color: #333 !default;
 $pigeon-type-color-link: #4781ba !default;
 $pigeon-type-color-link-visited: #7f629c !default;
 $pigeon-type-color-highlight: #ff9 !default;
+$pigeon-selection-color: $pigeon-type-color !default;
+$pigeon-selection-color-bg: #ccc !default;
 
 // Type: sizes
 $pigeon-type-size: 18px !default;

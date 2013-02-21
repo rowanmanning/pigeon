@@ -1009,6 +1009,17 @@ q:after {
   content: "”";
 }
 
+/* Selection */
+::-moz-selection {
+  background: #cccccc;
+  color: #333333;
+}
+
+::selection {
+  background: #cccccc;
+  color: #333333;
+}
+
 /* Block Quotes */
 /* Lists */
 ol ol, ol ul, ul ol, ul ul {
