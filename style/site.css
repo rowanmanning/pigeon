@@ -1036,19 +1036,19 @@ q:after {
 hr {
   height: 0;
   border: none;
-  border-top: 3px solid #d6d6d6;
-  color: #d6d6d6;
+  border-top: 5px solid #eadbcd;
+  color: #eadbcd;
 }
 
 /* Selection */
 ::-moz-selection {
-  background: #cccccc;
-  color: #333333;
+  background: #7f629c;
+  color: white;
 }
 
 ::selection {
-  background: #cccccc;
-  color: #333333;
+  background: #7f629c;
+  color: white;
 }
 
 /* Block Quotes */
@@ -1517,30 +1517,9 @@ body:before {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-align: center;
 }
-h1 a, h1 a:visited, .h1 a, .h1 a:visited, h2 a, h2 a:visited, .h2 a, .h2 a:visited, h3 a, h3 a:visited, .h3 a, .h3 a:visited, h4 a, h4 a:visited, .h4 a, .h4 a:visited, h5 a, h5 a:visited, .h5 a, .h5 a:visited, h6 a, h6 a:visited, .h6 a, .h6 a:visited {
-  color: #333333;
-  text-decoration: none;
-}
 
 dt, th {
   font-weight: normal;
-}
-
-hr {
-  height: 0;
-  border: none;
-  border-top: 5px solid #eadbcd;
-  color: #eadbcd;
-}
-
-::-moz-selection {
-  background: #7f629c;
-  color: #fff;
-}
-
-::selection {
-  background: #7f629c;
-  color: #fff;
 }
 
 @media all and (min-width: 680px) {

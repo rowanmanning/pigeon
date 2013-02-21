@@ -19,10 +19,15 @@ $c-grey: #747474;
 $c-grey-dk: #333;
 
 // Pigeon config
+$pigeon-selection-color: #fff;
+$pigeon-selection-color-bg: $c-lilac-dk;
 $pigeon-type-face: $t-family;
 $pigeon-type-face-heading: $t-family-heading;
 $pigeon-table-color: $c-cream-dk;
 $pigeon-table-color-stripe: #f8f0e7;
+$pigeon-rule-height: 5px;
+$pigeon-rule-color: $c-cream-dk;
+
 
 // Vendor styles
 @import "vendor/rowanmanning/pigeon/lib/pigeon";
