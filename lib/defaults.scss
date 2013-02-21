@@ -26,3 +26,6 @@ $pigeon-table-color-stripe: lighten($pigeon-table-color, 10%) !default;
 
 // Nav: delimiter
 $pigeon-nav-delimiter: ", " !default;
+
+// Right-to-left support
+$pigeon-rtl: true !default;

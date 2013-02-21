@@ -20,3 +20,10 @@
         }
     }
 }
+
+@if $pigeon-rtl {
+    /* Right-to-left support */
+    [dir=rtl] .stack {
+        padding-right: 0;
+    }
+}

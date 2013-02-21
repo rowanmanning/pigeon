@@ -554,6 +554,14 @@ table {
   display: block;
 }
 
+/* Right-to-left support */
+[dir=rtl] .blocknav {
+  padding-right: 0;
+}
+[dir=rtl] .blocknav > li, [dir=rtl] .blocknav > .item {
+  float: right;
+}
+
 /*
  * Nav object
  * ----------
@@ -574,6 +582,11 @@ table {
   display: inline-block;
   *display: inline;
   *zoom: 1;
+}
+
+/* Right-to-left support */
+[dir=rtl] .nav {
+  padding-right: 0;
 }
 
 /*
@@ -613,6 +626,11 @@ table {
 }
 .stack > li, .stack > li > a, .stack > .item, .stack > .item > a {
   display: block;
+}
+
+/* Right-to-left support */
+[dir=rtl] .stack {
+  padding-right: 0;
 }
 
 /*
@@ -699,6 +717,14 @@ table {
   float: left;
 }
 
+/* Right-to-left support */
+[dir=rtl] .fig {
+  margin-left: 22px;
+  margin-left: 2.2rem;
+  margin-right: 0;
+  float: right;
+}
+
 /*
  * Fig Alt object
  * --------------
@@ -713,6 +739,14 @@ table {
   margin-left: 2.2rem;
   display: block;
   float: right;
+}
+
+/* Right-to-left support */
+[dir=rtl] .fig-alt {
+  margin-right: 22px;
+  margin-right: 2.2rem;
+  margin-left: 0;
+  float: left;
 }
 
 /*
@@ -733,6 +767,18 @@ table {
 .indent-2, ol, ul {
   padding-left: 44px;
   padding-left: 4.4rem;
+}
+
+/* Right-to-left support */
+[dir=rtl] .indent, [dir=rtl] .quote, [dir=rtl] blockquote, [dir=rtl] ol ol, ol [dir=rtl] ol, [dir=rtl] ol ul, ol [dir=rtl] ul, [dir=rtl] ul ol, ul [dir=rtl] ol, [dir=rtl] ul ul, ul [dir=rtl] ul, [dir=rtl] dd {
+  padding-left: 0;
+  padding-right: 22px;
+  padding-right: 2.2rem;
+}
+[dir=rtl] .indent-2, [dir=rtl] ol, [dir=rtl] ul {
+  padding-left: 0;
+  padding-right: 44px;
+  padding-right: 4.4rem;
 }
 
 /*

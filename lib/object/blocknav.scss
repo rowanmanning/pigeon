@@ -25,3 +25,14 @@
         }
     }
 }
+
+@if $pigeon-rtl {
+    /* Right-to-left support */
+    [dir=rtl] .blocknav {
+        padding-right: 0;
+
+        > li, > .item {
+            float: right;
+        }
+    }
+}

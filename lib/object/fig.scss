@@ -15,6 +15,16 @@
     float: left;
 }
 
+@if $pigeon-rtl {
+    /* Right-to-left support */
+    [dir=rtl] .fig {
+        @include rem("margin-left", $pigeon-type-line-height);
+        margin-right: 0;
+        float: right;
+    }
+}
+
+
 /*
  * Fig Alt object
  * --------------
@@ -29,4 +39,13 @@
     @include rem("margin-left", $pigeon-type-line-height);
     display: block;
     float: right;
+}
+
+@if $pigeon-rtl {
+    /* Right-to-left support */
+    [dir=rtl] .fig-alt {
+        @include rem("margin-right", $pigeon-type-line-height);
+        margin-left: 0;
+        float: left;
+    }
 }
