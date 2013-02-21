@@ -553,6 +553,29 @@ table {
 }
 
 /*
+ * Shh A object
+ * ------------
+ *
+ * Used to make an anchor look like regular text.
+ *
+ *     <a href="..." class="shh-a"> ... </a>
+ *
+ * or
+ *
+ *     <div class="shh-a">
+ *         <a href="..."> ... </a>
+ *     </div>
+ */
+.shh-a a, a.shh-a {
+  text-decoration: none;
+}
+.shh-a a, .shh-a a:visited, a.shh-a, a.shh-a:visited {
+  color: inherit;
+  *color: #333333;
+  /* Best guess for IE 6–7 */
+}
+
+/*
  * Blocknav object
  * ---------------
  *
@@ -1007,6 +1030,25 @@ q:before {
 }
 q:after {
   content: "”";
+}
+
+/* Horizontal rules */
+hr {
+  height: 0;
+  border: none;
+  border-top: 3px solid #d6d6d6;
+  color: #d6d6d6;
+}
+
+/* Selection */
+::-moz-selection {
+  background: #cccccc;
+  color: #333333;
+}
+
+::selection {
+  background: #cccccc;
+  color: #333333;
 }
 
 /* Block Quotes */
