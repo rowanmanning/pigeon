@@ -204,6 +204,42 @@ layout: page
     </div>
 
 
+    <div id="typography-fig" class="typearea css-object">
+        <h3>
+            <a href="#typography-fig" class="section-link">Fig</a>
+        </h3>
+
+        <p>
+            The <code>fig</code> object is used to position elements to the left
+            side of a block of text by floating them. This object also applies
+            margins which make floated elements sit nicely with Pigeon's type
+            styles.
+        </p>
+
+        <div class="css-example">
+            {% highlight html %}<img class="fig" src="…" alt="This image is floated left">{% endhighlight %}
+        </div>
+
+        <p>
+            The <code>fig-alt</code> object is the same as <code>alt</code>
+            except that it positions elements on the right side of text.
+        </p>
+
+        <div class="css-example">
+            {% highlight html %}<img class="fig-alt" src="…" alt="This image is floated right">{% endhighlight %}
+        </div>
+
+        <p>
+            <b>Note:</b> <code>fig</code> and <code>fig-alt</code> classes are
+            named as such (without left/right suffixes) to allow Pigeon to be
+            used more comfortably with right-to-left languages.
+        </p>
+
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/fig.scss">View the source code for the fig object</a>.</p>
+
+    </div>
+
+
     <div id="typography-quote" class="typearea css-object">
         <h3>
             <a href="#typography-quote" class="section-link">Quote</a>
