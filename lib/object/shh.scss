@@ -1,0 +1,23 @@
+
+/*
+ * Shh A object
+ * ------------
+ *
+ * Used to make an anchor look like regular text.
+ *
+ *     <a href="..." class="shh-a"> ... </a>
+ *
+ * or
+ *
+ *     <div class="shh-a">
+ *         <a href="..."> ... </a>
+ *     </div>
+ */
+.shh-a a, a.shh-a {
+    text-decoration: none;
+
+    &, &:visited {
+        color: inherit;
+        *color: $pigeon-type-color; /* Best guess for IE 6–7 */
+    }
+}
