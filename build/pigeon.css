@@ -1009,6 +1009,14 @@ q:after {
   content: "”";
 }
 
+/* Horizontal rules */
+hr {
+  height: 0;
+  border: none;
+  border-top: 3px solid #d6d6d6;
+  color: #d6d6d6;
+}
+
 /* Selection */
 ::-moz-selection {
   background: #cccccc;

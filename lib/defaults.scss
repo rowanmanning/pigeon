@@ -20,6 +20,10 @@ $pigeon-type-weight-heading: normal !default;
 $pigeon-type-face: Arial, Helvetica, sans-serif !default;
 $pigeon-type-face-heading: $pigeon-type-face !default;
 
+// Rules
+$pigeon-rule-height: 3px !default;
+$pigeon-rule-color: #d6d6d6 !default;
+
 // Table: color
 $pigeon-table-color: #d6d6d6 !default;
 $pigeon-table-color-border: darken($pigeon-table-color, 10%) !default;

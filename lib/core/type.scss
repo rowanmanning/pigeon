@@ -90,6 +90,16 @@ q {
 }
 
 
+/* Horizontal rules */
+
+hr {
+    height: 0;
+    border: none;
+    border-top: $pigeon-rule-height solid $pigeon-rule-color;
+    color: $pigeon-rule-color;
+}
+
+
 /* Selection */
 
 ::-moz-selection {
