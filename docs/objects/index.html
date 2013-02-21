@@ -534,4 +534,31 @@ layout: page
 
     </div>
 
+
+    <div id="utilities-shh" class="typearea css-object">
+        <h3>
+            <a href="#utilities-shh" class="section-link">Shh</a>
+        </h3>
+
+        <p>
+            The <code>shh-a</code> object is used to disguise links to look
+            like their surrounding text. It can be used directly on an
+            <code>a</code> element or another element to target all child
+            links.
+        </p>
+
+        <div class="css-example">
+            {% highlight html %}<a class="shh-a" href="…">
+    This link looks like regular text.
+</a>
+
+<p class="shh-a">
+    All links in this paragraph will look like regular text.
+</p>{% endhighlight %}
+        </div>
+
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/shh.scss">View the source code for the shh object</a>.</p>
+
+    </div>
+
 </div>
