@@ -519,14 +519,14 @@ table {
  *         <li style="float: left;"> ... </li>
  *     </ul>
  */
-.clearfix, .blocknav {
+.clearfix, .blocklineup {
   zoom: 1;
 }
-.clearfix:before, .blocknav:before, .clearfix:after, .blocknav:after {
+.clearfix:before, .blocklineup:before, .clearfix:after, .blocklineup:after {
   display: table;
   content: '';
 }
-.clearfix:after, .blocknav:after {
+.clearfix:after, .blocklineup:after {
   clear: both;
 }
 
@@ -576,80 +576,80 @@ table {
 }
 
 /*
- * Blocknav object
- * ---------------
+ * Blocklineup object
+ * ------------------
  *
  * Remove standard list styling and display list
  * items as floated blocks. Extends the `clearfix`
  * object.
  *
- *     <ul class="blocknav">
+ *     <ul class="blocklineup">
  *         <li> ... </li>
  *         <li> ... </li>
  *     </ul>
  */
-.blocknav {
+.blocklineup {
   padding-left: 0;
   list-style: none;
 }
-.blocknav > li, .blocknav > .item {
+.blocklineup > li, .blocklineup > .item {
   float: left;
 }
-.blocknav > li, .blocknav > li > a, .blocknav > .item, .blocknav > .item > a {
+.blocklineup > li, .blocklineup > li > a, .blocklineup > .item, .blocklineup > .item > a {
   display: block;
 }
 
 /* Right-to-left support */
-[dir=rtl] .blocknav {
+[dir=rtl] .blocklineup {
   padding-right: 0;
 }
-[dir=rtl] .blocknav > li, [dir=rtl] .blocknav > .item {
+[dir=rtl] .blocklineup > li, [dir=rtl] .blocklineup > .item {
   float: right;
 }
 
 /*
- * Nav object
- * ----------
+ * Lineup object
+ * -------------
  *
  * Remove standard list styling and display list
  * items inline.
  *
- *     <ul class="nav">
+ *     <ul class="lineup">
  *         <li> ... </li>
  *         <li> ... </li>
  *     </ul>
  */
-.nav {
+.lineup {
   padding-left: 0;
   list-style: none;
 }
-.nav > li, .nav > li > a, .nav > .item, .nav > .item > a {
+.lineup > li, .lineup > li > a, .lineup > .item, .lineup > .item > a {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
 
 /* Right-to-left support */
-[dir=rtl] .nav {
+[dir=rtl] .lineup {
   padding-right: 0;
 }
 
 /*
- * Nav object Delimited modifier
- * -----------------------------
+ * Lineup object Delimited modifier
+ * --------------------------------
  *
  * Add a delimiter to list items. Dependent on the
- * Nav object.
+ * Lineup object.
  *
- *     <ul class="nav nav-is-delimited">
+ *     <ul class="lineup lineup-is-delimited">
  *         <li> ... </li>
  *         <li> ... </li>
  *     </ul>
  */
-.nav-is-delimited > li:after, .nav-is-delimited > .item:after {
+.lineup-is-delimited > li:after, .lineup-is-delimited > .item:after {
   content: ", ";
 }
-.nav-is-delimited > li:last-child:after, .nav-is-delimited > .item:last-child:after {
+.lineup-is-delimited > li:last-child:after, .lineup-is-delimited > .item:last-child:after {
   content: "";
   display: none;
 }

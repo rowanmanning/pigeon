@@ -1,17 +1,17 @@
 
 /*
- * Nav object
- * ----------
+ * Lineup object
+ * -------------
  *
  * Remove standard list styling and display list
  * items inline.
  *
- *     <ul class="nav">
+ *     <ul class="lineup">
  *         <li> ... </li>
  *         <li> ... </li>
  *     </ul>
  */
-.nav {
+.lineup {
     padding-left: 0;
     list-style: none;
 
@@ -24,27 +24,27 @@
 
 @if $pigeon-rtl {
     /* Right-to-left support */
-    [dir=rtl] .nav {
+    [dir=rtl] .lineup {
         padding-right: 0;
     }
 }
 
 /*
- * Nav object Delimited modifier
- * -----------------------------
+ * Lineup object Delimited modifier
+ * --------------------------------
  *
  * Add a delimiter to list items. Dependent on the
- * Nav object.
+ * Lineup object.
  *
- *     <ul class="nav nav-is-delimited">
+ *     <ul class="lineup lineup-is-delimited">
  *         <li> ... </li>
  *         <li> ... </li>
  *     </ul>
  */
-.nav-is-delimited {
+.lineup-is-delimited {
     > li, > .item {
         &:after {
-            content: $pigeon-nav-delimiter;
+            content: $pigeon-lineup-delimiter;
         }
         &:last-child:after {
             content: "";

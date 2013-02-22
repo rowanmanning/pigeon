@@ -1,18 +1,18 @@
 
 /*
- * Blocknav object
- * ---------------
+ * Blocklineup object
+ * ------------------
  *
  * Remove standard list styling and display list
  * items as floated blocks. Extends the `clearfix`
  * object.
  *
- *     <ul class="blocknav">
+ *     <ul class="blocklineup">
  *         <li> ... </li>
  *         <li> ... </li>
  *     </ul>
  */
-.blocknav {
+.blocklineup {
     @extend .clearfix;
     padding-left: 0;
     list-style: none;
@@ -28,7 +28,7 @@
 
 @if $pigeon-rtl {
     /* Right-to-left support */
-    [dir=rtl] .blocknav {
+    [dir=rtl] .blocklineup {
         padding-right: 0;
 
         > li, > .item {

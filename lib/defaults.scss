@@ -30,8 +30,8 @@ $pigeon-table-color-border: darken($pigeon-table-color, 10%) !default;
 $pigeon-table-color-header: $pigeon-table-color !default;
 $pigeon-table-color-stripe: lighten($pigeon-table-color, 10%) !default;
 
-// Nav: delimiter
-$pigeon-nav-delimiter: ", " !default;
+// Lineup: delimiter
+$pigeon-lineup-delimiter: ", " !default;
 
 // Right-to-left support
 $pigeon-rtl: true !default;
