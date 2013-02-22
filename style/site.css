@@ -809,7 +809,7 @@ table {
   padding-left: 2.2rem;
 }
 
-.indent-2, ol, ul {
+.indent-more, ol, ul {
   padding-left: 44px;
   padding-left: 4.4rem;
 }
@@ -820,7 +820,7 @@ table {
   padding-right: 22px;
   padding-right: 2.2rem;
 }
-[dir=rtl] .indent-2, [dir=rtl] ol, [dir=rtl] ul {
+[dir=rtl] .indent-more, [dir=rtl] ol, [dir=rtl] ul {
   padding-left: 0;
   padding-right: 44px;
   padding-right: 4.4rem;
@@ -896,7 +896,7 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table, .highlight {
   margin-bottom: 2.2rem;
 }
 
-.space-2 {
+.space-more {
   margin-bottom: 44px;
   margin-bottom: 4.4rem;
 }
@@ -915,7 +915,7 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table, .highlight {
   margin-top: 2.2rem;
 }
 
-.space-above-2 {
+.space-above-more {
   margin-top: 44px;
   margin-top: 4.4rem;
 }
