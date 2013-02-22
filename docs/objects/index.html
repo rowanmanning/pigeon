@@ -326,30 +326,30 @@ layout: page
     </div>
 
 
-    <div id="lists-nav" class="typearea css-object">
+    <div id="lists-lineup" class="typearea css-object">
         <h3>
-            <a href="#lists-nav" class="shh-a">Nav</a>
+            <a href="#lists-lineup" class="shh-a">Lineup</a>
         </h3>
 
         <p>
-            The <code>nav</code> object is used to remove standard list styling
+            The <code>lineup</code> object is used to remove standard list styling
             and display list items as inline blocks side by side.
         </p>
 
         <div class="css-example">
-            {% highlight html %}<ul class="nav">
+            {% highlight html %}<ul class="lineup">
     <li>This list looks just like…</li>
     <li>…spans side by side.</li>
 </ul>{% endhighlight %}
         </div>
 
         <p>
-            Any anchors which are direct descendants of the nav's list items are
+            Any anchors which are direct descendants of the lineup's list items are
             also displayed as inline blocks.
         </p>
 
         <div class="css-example">
-            {% highlight html %}<ul class="nav">
+            {% highlight html %}<ul class="lineup">
     <li>
         <a href="#">This is an inline block too!</a>
     </li>
@@ -357,69 +357,69 @@ layout: page
         </div>
 
         <p>
-            The <code>nav</code> object can be used with non-lists by replacing
+            The <code>lineup</code> object can be used with non-lists by replacing
             <code>li</code> elements with elements that have an
             <code>item</code> class.
         </p>
 
         <div class="css-example">
-            {% highlight html %}<div class="nav">
+            {% highlight html %}<div class="lineup">
     <div class="item">…</div>
     <div class="item">…</div>
 </div>{% endhighlight %}
         </div>
 
         <p>
-            The <code>nav-is-delimited</code> modifier is used alongside
-            <code>nav</code> to add commas after each list item. This allows you
+            The <code>lineup-is-delimited</code> modifier is used alongside
+            <code>lineup</code> to add commas after each list item. This allows you
             to easily create comma-delimited lists with semantic meaning.
         </p>
 
         <div class="css-example">
-            {% highlight html %}<ul class="nav nav-is-delimited">
+            {% highlight html %}<ul class="lineup lineup-is-delimited">
     <li>These list items</li>
     <li>will be</li>
     <li>comma delimited</li>
 </ul>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/nav.scss">View the source code for the nav object</a>.</p>
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/lineup.scss">View the source code for the lineup object</a>.</p>
 
     </div>
 
 
-    <div id="lists-blocknav" class="typearea css-object">
+    <div id="lists-blocklineup" class="typearea css-object">
         <h3>
-            <a href="#lists-blocknav" class="shh-a">Blocknav</a>
+            <a href="#lists-blocklineup" class="shh-a">Blocklineup</a>
         </h3>
 
         <p>
-            The <code>blocknav</code> object is used to remove standard list
+            The <code>blocklineup</code> object is used to remove standard list
             styling and display list items as blocks floated side by side.
             Floats are automatically cleared.
         </p>
 
         <div class="css-example">
-            {% highlight html %}<ul class="blocknav">
+            {% highlight html %}<ul class="blocklineup">
     <li>This is a list…</li>
     <li>…of floated blocks.</li>
 </ul>{% endhighlight %}
         </div>
 
         <p>
-            The <code>blocknav</code> object can be used with non-lists by replacing
+            The <code>blocklineup</code> object can be used with non-lists by replacing
             <code>li</code> elements with elements that have an
             <code>item</code> class.
         </p>
 
         <div class="css-example">
-            {% highlight html %}<div class="blocknav">
+            {% highlight html %}<div class="blocklineup">
     <div class="item">…</div>
     <div class="item">…</div>
 </div>{% endhighlight %}
         </div>
 
-        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/blocknav.scss">View the source code for the blocknav object</a>.</p>
+        <p><a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/object/blocklineup.scss">View the source code for the blocklineup object</a>.</p>
 
     </div>
 
