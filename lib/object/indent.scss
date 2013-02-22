@@ -12,7 +12,7 @@
 .indent {
     @include rem("padding-left", $pigeon-type-line-height);
 }
-.indent-2 {
+.indent-more {
     @include rem("padding-left", ($pigeon-type-line-height * 2));
 }
 
@@ -23,7 +23,7 @@
             padding-left: 0;
             @include rem("padding-right", $pigeon-type-line-height);
         }
-        .indent-2 {
+        .indent-more {
             padding-left: 0;
             @include rem("padding-right", ($pigeon-type-line-height * 2));
         }

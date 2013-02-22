@@ -2,7 +2,7 @@
 /* Lists */
 
 ol, ul {
-    @extend .indent-2;
+    @extend .indent-more;
 
     ol, ul {
         @extend .indent;
