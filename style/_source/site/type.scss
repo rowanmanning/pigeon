@@ -1,20 +1,15 @@
 
-// Headings
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    text-align: center;
-}
-
 // Overrides – non-bold font for any custom fonts
 dt, th {
     font-weight: normal;
 }
 
-// Non-mobile
-@media all and (min-width: $frag-break-bravo) {
+// Mobile
+@media all and (max-width: $frag-break-mobile) {
 
     // Headings
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-        text-align: left;
+        text-align: center;
     }
 
 }

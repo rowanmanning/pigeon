@@ -1087,14 +1087,27 @@ caption {
   text-align: left;
 }
 
-.grid {
+/*
+ * Frag 2.0.0-beta.2
+ *
+ * Frag is a fluid, responsive, simple grid system for
+ * CSS written in Sass. http://frag.rowanmanning.com/
+ *
+ * Copyright 2013, Rowan Manning.
+ * Licensed under the MIT license.
+ *
+ */
+/* Util: Box for grid/column display */
+.grid, .col {
   display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  zoom: 1;
-  width: auto;
-  max-width: 1200px;
+}
+
+/* Util: Clearfix */
+.grid {
+  *zoom: 1;
 }
 .grid:before, .grid:after {
   display: table;
@@ -1104,212 +1117,253 @@ caption {
   clear: both;
 }
 
+/* Grid: Base styles */
+.grid {
+  width: auto;
+  max-width: 1200px;
+  *width: 980px;
+}
+.grid .grid {
+  *width: auto;
+}
+.grid .grid .col {
+  *width: auto;
+  *float: none;
+}
+
+/* Grid: Column styles */
 .col {
-  display: block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   float: left;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+[dir=rtl] .col {
+  float: right;
+}
+
+/* Grid: Remove column gutter */
 .col-degutter {
   padding-left: 0;
   padding-right: 0;
 }
 
-.ca-1 {
+/* Grid: Base columns */
+.dsk-1 {
   width: 8.33333%;
+  *width: 41px;
 }
 
-.ca-2 {
+.dsk-2 {
   width: 16.66667%;
+  *width: 122px;
 }
 
-.ca-3 {
+.dsk-3 {
   width: 25%;
+  *width: 203px;
 }
 
-.ca-4 {
+.dsk-4 {
   width: 33.33333%;
+  *width: 284px;
 }
 
-.ca-5 {
+.dsk-5 {
   width: 41.66667%;
+  *width: 365px;
 }
 
-.ca-6 {
+.dsk-6 {
   width: 50%;
+  *width: 446px;
 }
 
-.ca-7 {
+.dsk-7 {
   width: 58.33333%;
+  *width: 527px;
 }
 
-.ca-8 {
+.dsk-8 {
   width: 66.66667%;
+  *width: 608px;
 }
 
-.ca-9 {
+.dsk-9 {
   width: 75%;
+  *width: 689px;
 }
 
-.ca-10 {
+.dsk-10 {
   width: 83.33333%;
+  *width: 770px;
 }
 
-.ca-11 {
+.dsk-11 {
   width: 91.66667%;
+  *width: 851px;
 }
 
-.ca-12 {
+.dsk-12 {
   width: 100%;
+  *width: 932px;
 }
 
-.ca-hide {
+.dsk-hide {
   display: none;
 }
 
-.ca-show {
+.dsk-show {
   display: block;
 }
 
-.ca-clear {
+.dsk-clear {
   clear: left;
 }
 
-.ca-unclear {
+[dir=rtl] .dsk-clear {
+  clear: right;
+}
+
+.dsk-unclear {
   clear: none;
 }
 
-@media all and (min-width: 680px) {
-  .cb-1 {
+@media all and (max-width: 1000px) {
+  .tab-1 {
     width: 8.33333%;
   }
 
-  .cb-2 {
+  .tab-2 {
     width: 16.66667%;
   }
 
-  .cb-3 {
+  .tab-3 {
     width: 25%;
   }
 
-  .cb-4 {
+  .tab-4 {
     width: 33.33333%;
   }
 
-  .cb-5 {
+  .tab-5 {
     width: 41.66667%;
   }
 
-  .cb-6 {
+  .tab-6 {
     width: 50%;
   }
 
-  .cb-7 {
+  .tab-7 {
     width: 58.33333%;
   }
 
-  .cb-8 {
+  .tab-8 {
     width: 66.66667%;
   }
 
-  .cb-9 {
+  .tab-9 {
     width: 75%;
   }
 
-  .cb-10 {
+  .tab-10 {
     width: 83.33333%;
   }
 
-  .cb-11 {
+  .tab-11 {
     width: 91.66667%;
   }
 
-  .cb-12 {
+  .tab-12 {
     width: 100%;
   }
 
-  .cb-hide {
+  .tab-hide {
     display: none;
   }
 
-  .cb-show {
+  .tab-show {
     display: block;
   }
 
-  .cb-clear {
+  .tab-clear {
     clear: left;
   }
 
-  .cb-unclear {
+  [dir=rtl] .tab-clear {
+    clear: right;
+  }
+
+  .tab-unclear {
     clear: none;
   }
 }
-@media all and (min-width: 1100px) {
-  .cc-1 {
+@media all and (max-width: 640px) {
+  .mob-1 {
     width: 8.33333%;
   }
 
-  .cc-2 {
+  .mob-2 {
     width: 16.66667%;
   }
 
-  .cc-3 {
+  .mob-3 {
     width: 25%;
   }
 
-  .cc-4 {
+  .mob-4 {
     width: 33.33333%;
   }
 
-  .cc-5 {
+  .mob-5 {
     width: 41.66667%;
   }
 
-  .cc-6 {
+  .mob-6 {
     width: 50%;
   }
 
-  .cc-7 {
+  .mob-7 {
     width: 58.33333%;
   }
 
-  .cc-8 {
+  .mob-8 {
     width: 66.66667%;
   }
 
-  .cc-9 {
+  .mob-9 {
     width: 75%;
   }
 
-  .cc-10 {
+  .mob-10 {
     width: 83.33333%;
   }
 
-  .cc-11 {
+  .mob-11 {
     width: 91.66667%;
   }
 
-  .cc-12 {
+  .mob-12 {
     width: 100%;
   }
 
-  .cc-hide {
+  .mob-hide {
     display: none;
   }
 
-  .cc-show {
+  .mob-show {
     display: block;
   }
 
-  .cc-clear {
+  .mob-clear {
     clear: left;
   }
 
-  .cc-unclear {
+  [dir=rtl] .mob-clear {
+    clear: right;
+  }
+
+  .mob-unclear {
     clear: none;
   }
 }
@@ -1317,6 +1371,12 @@ caption {
   margin-right: 20px;
   margin-bottom: 22px;
   margin-bottom: 2.2rem;
+}
+@media all and (max-width: 640px) {
+  .actions li {
+    float: none;
+    margin-right: 0;
+  }
 }
 
 .action-button {
@@ -1353,33 +1413,29 @@ caption {
   display: block;
 }
 .forkme img {
-  width: 120px;
-  height: 120px;
+  width: 149px;
+  height: 149px;
 }
-@media all and (min-width: 680px) {
+@media all and (max-width: 1000px) {
   .forkme img {
-    width: 149px;
-    height: 149px;
+    width: 120px;
+    height: 120px;
   }
 }
 
 .logo {
   display: block;
-  text-align: center;
 }
 .logo img {
   width: 100px;
   height: 100px;
 }
-@media all and (min-width: 680px) {
+@media all and (max-width: 640px) {
   .logo {
-    text-align: left;
+    text-align: center;
   }
 }
 
-.navigation {
-  text-align: center;
-}
 .navigation li {
   margin-bottom: 11px;
   margin-bottom: 1.1rem;
@@ -1392,18 +1448,19 @@ caption {
   padding-bottom: 11px;
   padding-bottom: 1.1rem;
   background-color: #f9eee4;
+  border-left: 5px solid #7f629c;
   color: #333333;
   text-decoration: none;
 }
 .navigation a:hover {
-  background-color: #ccaaee;
+  background-color: #99ccff;
 }
-@media all and (min-width: 680px) {
+@media all and (max-width: 640px) {
   .navigation {
-    text-align: left;
+    text-align: center;
   }
   .navigation a {
-    border-left: 5px solid #7f629c;
+    border-left: none;
   }
 }
 
@@ -1539,16 +1596,12 @@ body:before {
   padding-top: 4.4rem;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  text-align: center;
-}
-
 dt, th {
   font-weight: normal;
 }
 
-@media all and (min-width: 680px) {
+@media all and (max-width: 640px) {
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    text-align: left;
+    text-align: center;
   }
 }

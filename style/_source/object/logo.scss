@@ -2,14 +2,13 @@
 // Site logo
 .logo {
     display: block;
-    text-align: center;
 
     img {
         width: 100px;
         height: 100px;
     }
 
-    @media all and (min-width: $frag-break-bravo) {
-        text-align: left;
+    @media all and (max-width: $frag-break-mobile) {
+        text-align: center;
     }
 }

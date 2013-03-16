@@ -11,11 +11,11 @@
     }
 
     img {
-        width: 120px;
-        height: 120px;
-        @media all and (min-width: $frag-break-bravo) {
-            width: 149px;
-            height: 149px;
+        width: 149px;
+        height: 149px;
+        @media all and (max-width: $frag-break-tablet) {
+            width: 120px;
+            height: 120px;
         }
     }
 }
