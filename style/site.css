@@ -1313,6 +1313,31 @@ caption {
     clear: none;
   }
 }
+.actions li {
+  margin-right: 20px;
+  margin-bottom: 22px;
+  margin-bottom: 2.2rem;
+}
+
+.action-button {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 11px;
+  padding-top: 1.1rem;
+  padding-bottom: 11px;
+  padding-bottom: 1.1rem;
+  margin: 0;
+  background: #eadbcd;
+  text-decoration: none;
+}
+.action-button, .action-button:visited {
+  color: #333333;
+}
+.action-button:hover {
+  background-color: #ccaaee;
+}
+
 .css-object {
   margin-top: 66px;
   margin-top: 6.6rem;
