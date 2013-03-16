@@ -21,12 +21,13 @@
     @include rem("padding-top", ($pigeon-type-line-height / 2));
     @include rem("padding-bottom", ($pigeon-type-line-height / 2));
     margin: 0;
-    background: $c-cream-dk;
+    background: $c-lilac;
     text-decoration: none;
     &, &:visited {
         color: $c-grey-dk;
     }
     &:hover {
-        background-color: $c-lilac;
+        background-color: $c-lilac-dk;
+        color: $c-cream;
     }
 }

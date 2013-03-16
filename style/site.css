@@ -1388,14 +1388,15 @@ caption {
   padding-bottom: 11px;
   padding-bottom: 1.1rem;
   margin: 0;
-  background: #eadbcd;
+  background: #ccaaee;
   text-decoration: none;
 }
 .action-button, .action-button:visited {
   color: #333333;
 }
 .action-button:hover {
-  background-color: #ccaaee;
+  background-color: #7f629c;
+  color: #fffaf5;
 }
 
 .css-object {
