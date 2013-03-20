@@ -1,0 +1,21 @@
+{
+    "name": "pigeon",
+    "version": "1.0.0",
+    "description": "Pigeon is an OOCSS framework for rapid prototyping and building smart, scalable websites.",
+    "keywords": ["css", "framework", "oocss", "sass"],
+    "license": "MIT",
+
+    "repo": "rowanmanning/pigeon",
+    "homepage": "http://pigeoncss.com/",
+    "bugs": "https://github.com/rowanmanning/pigeon/issues",
+
+    "author": {
+        "name": "Rowan Manning",
+        "url": "http://rowanmanning.co.uk/"
+    },
+
+    "main": "build/pigeon.css",
+    "styles": [
+        "build/pigeon.css"
+    ]
+}
