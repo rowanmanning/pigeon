@@ -1556,6 +1556,10 @@ pre code {
   color: #ccaaee;
 }
 
+.highlight .sh .nv {
+  color: #7f629c;
+}
+
 .footer {
   padding-top: 88px;
   padding-top: 8.8rem;
