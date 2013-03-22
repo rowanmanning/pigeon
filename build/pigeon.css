@@ -9,6 +9,9 @@
  * Licensed under the MIT license.
  * 
  */
+/*
+ * Rem 1.0.0  |  Copyright 2013, Rowan Manning  |  MIT licensed
+ */
 /* normalize.css v1.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -757,7 +760,7 @@ table {
  */
 .fig {
   margin-right: 22px;
-  margin-right: 2.2rem;
+  margin-right:  2.2rem;
   display: block;
   float: left;
 }
@@ -765,7 +768,7 @@ table {
 /* Right-to-left support */
 [dir=rtl] .fig {
   margin-left: 22px;
-  margin-left: 2.2rem;
+  margin-left:  2.2rem;
   margin-right: 0;
   float: right;
 }
@@ -781,7 +784,7 @@ table {
  */
 .fig-alt {
   margin-left: 22px;
-  margin-left: 2.2rem;
+  margin-left:  2.2rem;
   display: block;
   float: right;
 }
@@ -789,7 +792,7 @@ table {
 /* Right-to-left support */
 [dir=rtl] .fig-alt {
   margin-right: 22px;
-  margin-right: 2.2rem;
+  margin-right:  2.2rem;
   margin-left: 0;
   float: left;
 }
@@ -806,24 +809,24 @@ table {
  */
 .indent, .quote, blockquote, ol ol, ol ul, ul ol, ul ul, dd {
   padding-left: 22px;
-  padding-left: 2.2rem;
+  padding-left:  2.2rem;
 }
 
 .indent-more, ol, ul {
   padding-left: 44px;
-  padding-left: 4.4rem;
+  padding-left:  4.4rem;
 }
 
 /* Right-to-left support */
 [dir=rtl] .indent, [dir=rtl] .quote, [dir=rtl] blockquote, [dir=rtl] ol ol, ol [dir=rtl] ol, [dir=rtl] ol ul, ol [dir=rtl] ul, [dir=rtl] ul ol, ul [dir=rtl] ol, [dir=rtl] ul ul, ul [dir=rtl] ul, [dir=rtl] dd {
   padding-left: 0;
   padding-right: 22px;
-  padding-right: 2.2rem;
+  padding-right:  2.2rem;
 }
 [dir=rtl] .indent-more, [dir=rtl] ol, [dir=rtl] ul {
   padding-left: 0;
   padding-right: 44px;
-  padding-right: 4.4rem;
+  padding-right:  4.4rem;
 }
 
 /*
@@ -851,9 +854,9 @@ table {
 
 .quote-attrib {
   font-size: 16px;
-  font-size: 1.6rem;
+  font-size:  1.6rem;
   line-height: 20px;
-  line-height: 2rem;
+  line-height:  2rem;
   font-style: italic;
 }
 .quote-attrib:before {
@@ -873,9 +876,9 @@ table {
  */
 .smallprint, figcaption, small, sub, sup {
   font-size: 16px;
-  font-size: 1.6rem;
+  font-size:  1.6rem;
   line-height: 20px;
-  line-height: 2rem;
+  line-height:  2rem;
 }
 
 /*
@@ -893,12 +896,12 @@ table {
 .space, .fig, .fig-alt, p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
 blockquote, caption, dl, figure, ol, ul, hr, pre, table {
   margin-bottom: 22px;
-  margin-bottom: 2.2rem;
+  margin-bottom:  2.2rem;
 }
 
 .space-more {
   margin-bottom: 44px;
-  margin-bottom: 4.4rem;
+  margin-bottom:  4.4rem;
 }
 
 /**
@@ -912,12 +915,12 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
  */
 .space-above {
   margin-top: 22px;
-  margin-top: 2.2rem;
+  margin-top:  2.2rem;
 }
 
 .space-above-more {
   margin-top: 44px;
-  margin-top: 4.4rem;
+  margin-top:  4.4rem;
 }
 
 /*
@@ -934,7 +937,7 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
 .typearea {
   display: block;
   padding-top: 22px;
-  padding-top: 2.2rem;
+  padding-top:  2.2rem;
 }
 
 /* Base typography */
@@ -945,9 +948,9 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  font-size: 1.8rem;
+  font-size:  1.8rem;
   line-height: 22px;
-  line-height: 2.2rem;
+  line-height:  2.2rem;
   color: #333333;
 }
 
@@ -965,44 +968,44 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
 
 h6, .h6 {
   font-size: 20px;
-  font-size: 2rem;
+  font-size:  2rem;
   line-height: 24px;
-  line-height: 2.4rem;
+  line-height:  2.4rem;
 }
 
 h5, .h5 {
   font-size: 22px;
-  font-size: 2.2rem;
+  font-size:  2.2rem;
   line-height: 26px;
-  line-height: 2.6rem;
+  line-height:  2.6rem;
 }
 
 h4, .h4 {
   font-size: 25px;
-  font-size: 2.5rem;
+  font-size:  2.5rem;
   line-height: 29px;
-  line-height: 2.9rem;
+  line-height:  2.9rem;
 }
 
 h3, .h3 {
   font-size: 28px;
-  font-size: 2.8rem;
+  font-size:  2.8rem;
   line-height: 32px;
-  line-height: 3.2rem;
+  line-height:  3.2rem;
 }
 
 h2, .h2 {
   font-size: 32px;
-  font-size: 3.2rem;
+  font-size:  3.2rem;
   line-height: 36px;
-  line-height: 3.6rem;
+  line-height:  3.6rem;
 }
 
 h1, .h1 {
   font-size: 36px;
-  font-size: 3.6rem;
+  font-size:  3.6rem;
   line-height: 40px;
-  line-height: 4rem;
+  line-height:  4rem;
 }
 
 /* Links */
@@ -1064,7 +1067,7 @@ dt {
 dd {
   margin-left: 0;
   margin-bottom: 11px;
-  margin-bottom: 1.1rem;
+  margin-bottom:  1.1rem;
 }
 
 /* Tables */
