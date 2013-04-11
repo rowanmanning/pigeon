@@ -904,6 +904,11 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
   margin-bottom:  4.4rem;
 }
 
+.space-less {
+  margin-bottom: 11px;
+  margin-bottom:  1.1rem;
+}
+
 /**
  * Space Above object
  * ------------------
@@ -921,6 +926,11 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
 .space-above-more {
   margin-top: 44px;
   margin-top:  4.4rem;
+}
+
+.space-above-less {
+  margin-top: 11px;
+  margin-top:  1.1rem;
 }
 
 /*

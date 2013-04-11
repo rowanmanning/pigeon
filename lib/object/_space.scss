@@ -17,6 +17,9 @@
 .space-more {
     @include rem("margin-bottom", ($pigeon-type-line-height * 2));
 }
+.space-less {
+    @include rem("margin-bottom", ($pigeon-type-line-height / 2));
+}
 
 /**
  * Space Above object
@@ -32,4 +35,7 @@
 }
 .space-above-more {
     @include rem("margin-top", ($pigeon-type-line-height * 2));
+}
+.space-above-less {
+    @include rem("margin-top", ($pigeon-type-line-height / 2));
 }
