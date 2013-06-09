@@ -22,6 +22,7 @@ $pigeon-type-size: 16px;
     <h2>Available Configurations</h2>
 
     <table class="table table-is-wide table-is-striped smallprint">
+        <caption class="h4">Typographic Configurations</caption>
         <thead>
             <tr>
                 <th>Name</th>
@@ -70,25 +71,97 @@ $pigeon-type-size: 16px;
             <tr>
                 <td>$pigeon-type-size</td>
                 <td>The default type size.<br/>This gets set in <code>px</code> and <code>rem</code></td>
-                <td>18px</td>
-            </tr>
-
-            <tr>
-                <td>$pigeon-type-size-incrementor</td>
-                <td>See <a href="#type-sizing">Type Sizing</a></td>
-                <td>2px</td>
-            </tr>
-
-            <tr>
-                <td>$pigeon-type-size-accumulator</td>
-                <td>See <a href="#type-sizing">Type Sizing</a></td>
-                <td>0.5px</td>
+                <td>17px</td>
             </tr>
 
             <tr>
                 <td>$pigeon-type-line-height</td>
                 <td>The default line height.<br/>This gets set in <code>px</code> and <code>rem</code>.<br/>This is also used for type spacing</td>
+                <td>25px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-size-small</td>
+                <td>The default type size for <code>small</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code></td>
+                <td>14px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-line-height-small</td>
+                <td>The default line height for <code>small</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code>.</td>
+                <td>25px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-size-6</td>
+                <td>The default type size for <code>h6</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code></td>
+                <td>19px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-line-height-6</td>
+                <td>The default line height for <code>h6</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code>.</td>
+                <td>25px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-size-5</td>
+                <td>The default type size for <code>h5</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code></td>
                 <td>22px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-line-height-5</td>
+                <td>The default line height for <code>h5</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code>.</td>
+                <td>25px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-size-4</td>
+                <td>The default type size for <code>h4</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code></td>
+                <td>26px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-line-height-4</td>
+                <td>The default line height for <code>h4</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code>.</td>
+                <td>50px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-size-3</td>
+                <td>The default type size for <code>h3</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code></td>
+                <td>31px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-line-height-3</td>
+                <td>The default line height for <code>h3</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code>.</td>
+                <td>50px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-size-2</td>
+                <td>The default type size for <code>h2</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code></td>
+                <td>37px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-line-height-2</td>
+                <td>The default line height for <code>h2</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code>.</td>
+                <td>50px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-size-1</td>
+                <td>The default type size for <code>h1</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code></td>
+                <td>44px</td>
+            </tr>
+
+            <tr>
+                <td>$pigeon-type-line-height-1</td>
+                <td>The default line height for <code>h1</code> elements.<br/>This gets set in <code>px</code> and <code>rem</code>.</td>
+                <td>50px</td>
             </tr>
 
             <tr>
@@ -108,6 +181,21 @@ $pigeon-type-size: 16px;
                 <td>The type face for headings</td>
                 <td>$pigeon-type-face</td>
             </tr>
+
+        </tbody>
+    </table>
+
+
+    <table class="table table-is-wide table-is-striped smallprint">
+        <caption class="h4">Other Configurations</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Default</th>
+            </tr>
+        </thead>
+        <tbody>
 
             <tr>
                 <td>$pigeon-rule-height</td>
@@ -159,28 +247,5 @@ $pigeon-type-size: 16px;
 
         </tbody>
     </table>
-
-</div>
-
-
-<div id="type-sizing" class="section typearea">
-    <h2>Type Sizing</h2>
-
-    <p>
-        Type sizing in Pigeon is all calculated from a single base size,
-        <code>$pigeon-type-size</code>. The way this is calculated is by
-        looping a specific number of times, each time adding
-        <code>$pigeon-type-size-incrementor</code>. On each iteration, the
-        <code>$pigeon-type-size-incrementor</code> variable is incremented
-        itself by the value of <code>$pigeon-type-size-accumulator</code>.
-    </p>
-
-    <p>
-        I realise this sounds confusing as hell. I'll improve these docs at some
-        point, but in the meantime have a look at
-        <a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/util/type.scss">lib/util/type.scss</a>
-        and
-        <a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/lib/util/accum-inc.scss">lib/util/accum-inc.scss</a>.
-    </p>
 
 </div>
