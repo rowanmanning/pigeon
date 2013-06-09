@@ -1423,10 +1423,6 @@ caption {
   }
 }
 
-.navigation li {
-  margin-bottom: 12.5px;
-  margin-bottom:  1.25rem;
-}
 .navigation a, .navigation a:visited {
   padding-left: 20px;
   padding-right: 20px;

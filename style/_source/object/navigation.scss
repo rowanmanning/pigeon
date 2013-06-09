@@ -1,10 +1,6 @@
 
 // Site navigation
 .navigation {
-
-    li {
-        @include rem("margin-bottom", ($pigeon-type-line-height / 2));
-    }
     
     a, a:visited {
         padding-left: $gutter;
