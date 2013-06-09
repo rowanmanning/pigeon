@@ -48,12 +48,17 @@ layout: page
 
         <p>
             Both the <code>space</code> and <code>space-above</code> objects can
-            be suffixed with <code>-more</code> to double the spacing added.
+            be suffixed with <code>-more</code> or <code>-less</code> to double
+            or halve the spacing added.
         </p>
 
         <div class="css-example">
             {% highlight html %}<p class="space-more space-above-more">
     This text has double spacing above and below.
+</p>
+
+<p class="space-less space-above-less">
+    This text has half spacing above and below.
 </p>{% endhighlight %}
         </div>
 
