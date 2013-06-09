@@ -11,5 +11,5 @@
  *     <p class="smallprint"> ... </p>
  */
 .smallprint {
-    @include pigeon-type-scale(-1);
+    font-size: $pigeon-type-size-small;
 }

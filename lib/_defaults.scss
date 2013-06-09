@@ -8,10 +8,22 @@ $pigeon-selection-color: $pigeon-type-color !default;
 $pigeon-selection-color-bg: #ccc !default;
 
 // Type: sizes
-$pigeon-type-size: 18px !default;
-$pigeon-type-size-incrementor: 2px !default;
-$pigeon-type-size-accumulator: 0.5px !default;
-$pigeon-type-line-height: 22px !default;
+$pigeon-type-size: 17px !default;
+$pigeon-type-line-height: 25px !default;
+$pigeon-type-size-small: 14px !default;
+$pigeon-type-line-height-small: 25px !default;
+$pigeon-type-size-6: 19px !default;
+$pigeon-type-line-height-6: 25px !default;
+$pigeon-type-size-5: 22px !default;
+$pigeon-type-line-height-5: 25px !default;
+$pigeon-type-size-4: 26px !default;
+$pigeon-type-line-height-4: 50px !default;
+$pigeon-type-size-3: 31px !default;
+$pigeon-type-line-height-3: 50px !default;
+$pigeon-type-size-2: 37px !default;
+$pigeon-type-line-height-2: 50px !default;
+$pigeon-type-size-1: 44px !default;
+$pigeon-type-line-height-1: 50px !default;
 
 // Type: weights
 $pigeon-type-weight-heading: normal !default;

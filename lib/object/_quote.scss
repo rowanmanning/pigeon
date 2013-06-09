@@ -22,7 +22,7 @@
     margin-bottom: 0;
 }
 .quote-attrib {
-    @include pigeon-type-scale(-1);
+    font-size: $pigeon-type-size-small;
     font-style: italic;
 
     &:before {

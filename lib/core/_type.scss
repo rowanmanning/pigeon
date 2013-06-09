@@ -6,7 +6,7 @@ html {
 }
 body {
     font-family: $pigeon-type-face;
-    @include pigeon-type-scale(0);
+    font-size: $pigeon-type-size;
     color: $pigeon-type-color;
 }
 
@@ -28,27 +28,27 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
 }
 
 h6, .h6 {
-    @include pigeon-type-scale(1);
+    font-size: $pigeon-type-size-6;
 }
 
 h5, .h5 {
-    @include pigeon-type-scale(2);
+    font-size: $pigeon-type-size-5;
 }
 
 h4, .h4 {
-    @include pigeon-type-scale(3);
+    font-size: $pigeon-type-size-4;
 }
 
 h3, .h3 {
-    @include pigeon-type-scale(4);
+    font-size: $pigeon-type-size-3;
 }
 
 h2, .h2 {
-    @include pigeon-type-scale(5);
+    font-size: $pigeon-type-size-2;
 }
 
 h1, .h1 {
-    @include pigeon-type-scale(6);
+    font-size: $pigeon-type-size-1;
 }
 
 

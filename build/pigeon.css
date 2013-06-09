@@ -759,16 +759,16 @@ table {
  *     <img src="..." alt="..." class="fig"/>
  */
 .fig {
-  margin-right: 22px;
-  margin-right:  2.2rem;
+  margin-right: 25px;
+  margin-right:  2.5rem;
   display: block;
   float: left;
 }
 
 /* Right-to-left support */
 [dir=rtl] .fig {
-  margin-left: 22px;
-  margin-left:  2.2rem;
+  margin-left: 25px;
+  margin-left:  2.5rem;
   margin-right: 0;
   float: right;
 }
@@ -783,16 +783,16 @@ table {
  *     <img src="..." alt="..." class="fig-alt"/>
  */
 .fig-alt {
-  margin-left: 22px;
-  margin-left:  2.2rem;
+  margin-left: 25px;
+  margin-left:  2.5rem;
   display: block;
   float: right;
 }
 
 /* Right-to-left support */
 [dir=rtl] .fig-alt {
-  margin-right: 22px;
-  margin-right:  2.2rem;
+  margin-right: 25px;
+  margin-right:  2.5rem;
   margin-left: 0;
   float: left;
 }
@@ -808,25 +808,25 @@ table {
  *     <p class="indent"> ... </p>
  */
 .indent, .quote, blockquote, ol ol, ol ul, ul ol, ul ul, dd {
-  padding-left: 22px;
-  padding-left:  2.2rem;
+  padding-left: 25px;
+  padding-left:  2.5rem;
 }
 
 .indent-more, ol, ul {
-  padding-left: 44px;
-  padding-left:  4.4rem;
+  padding-left: 50px;
+  padding-left:  5rem;
 }
 
 /* Right-to-left support */
 [dir=rtl] .indent, [dir=rtl] .quote, [dir=rtl] blockquote, [dir=rtl] ol ol, ol [dir=rtl] ol, [dir=rtl] ol ul, ol [dir=rtl] ul, [dir=rtl] ul ol, ul [dir=rtl] ol, [dir=rtl] ul ul, ul [dir=rtl] ul, [dir=rtl] dd {
   padding-left: 0;
-  padding-right: 22px;
-  padding-right:  2.2rem;
+  padding-right: 25px;
+  padding-right:  2.5rem;
 }
 [dir=rtl] .indent-more, [dir=rtl] ol, [dir=rtl] ul {
   padding-left: 0;
-  padding-right: 44px;
-  padding-right:  4.4rem;
+  padding-right: 50px;
+  padding-right:  5rem;
 }
 
 /*
@@ -853,10 +853,7 @@ table {
 }
 
 .quote-attrib {
-  font-size: 16px;
-  font-size:  1.6rem;
-  line-height: 20px;
-  line-height:  2rem;
+  font-size: 14px;
   font-style: italic;
 }
 .quote-attrib:before {
@@ -875,10 +872,7 @@ table {
  *     <p class="smallprint"> ... </p>
  */
 .smallprint, figcaption, small, sub, sup {
-  font-size: 16px;
-  font-size:  1.6rem;
-  line-height: 20px;
-  line-height:  2rem;
+  font-size: 14px;
 }
 
 /*
@@ -895,18 +889,18 @@ table {
  */
 .space, .fig, .fig-alt, p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
 blockquote, caption, dl, figure, ol, ul, hr, pre, table {
-  margin-bottom: 22px;
-  margin-bottom:  2.2rem;
+  margin-bottom: 25px;
+  margin-bottom:  2.5rem;
 }
 
 .space-more {
-  margin-bottom: 44px;
-  margin-bottom:  4.4rem;
+  margin-bottom: 50px;
+  margin-bottom:  5rem;
 }
 
 .space-less {
-  margin-bottom: 11px;
-  margin-bottom:  1.1rem;
+  margin-bottom: 12.5px;
+  margin-bottom:  1.25rem;
 }
 
 /**
@@ -919,18 +913,18 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
  *     <p> ... </p>
  */
 .space-above {
-  margin-top: 22px;
-  margin-top:  2.2rem;
+  margin-top: 25px;
+  margin-top:  2.5rem;
 }
 
 .space-above-more {
-  margin-top: 44px;
-  margin-top:  4.4rem;
+  margin-top: 50px;
+  margin-top:  5rem;
 }
 
 .space-above-less {
-  margin-top: 11px;
-  margin-top:  1.1rem;
+  margin-top: 12.5px;
+  margin-top:  1.25rem;
 }
 
 /*
@@ -946,8 +940,8 @@ blockquote, caption, dl, figure, ol, ul, hr, pre, table {
  */
 .typearea {
   display: block;
-  padding-top: 22px;
-  padding-top:  2.2rem;
+  padding-top: 25px;
+  padding-top:  2.5rem;
 }
 
 /* Base typography */
@@ -957,10 +951,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-size:  1.8rem;
-  line-height: 22px;
-  line-height:  2.2rem;
+  font-size: 17px;
   color: #333333;
 }
 
@@ -977,45 +968,27 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
 }
 
 h6, .h6 {
-  font-size: 20px;
-  font-size:  2rem;
-  line-height: 24px;
-  line-height:  2.4rem;
+  font-size: 19px;
 }
 
 h5, .h5 {
   font-size: 22px;
-  font-size:  2.2rem;
-  line-height: 26px;
-  line-height:  2.6rem;
 }
 
 h4, .h4 {
-  font-size: 25px;
-  font-size:  2.5rem;
-  line-height: 29px;
-  line-height:  2.9rem;
+  font-size: 26px;
 }
 
 h3, .h3 {
-  font-size: 28px;
-  font-size:  2.8rem;
-  line-height: 32px;
-  line-height:  3.2rem;
+  font-size: 31px;
 }
 
 h2, .h2 {
-  font-size: 32px;
-  font-size:  3.2rem;
-  line-height: 36px;
-  line-height:  3.6rem;
+  font-size: 37px;
 }
 
 h1, .h1 {
-  font-size: 36px;
-  font-size:  3.6rem;
-  line-height: 40px;
-  line-height:  4rem;
+  font-size: 44px;
 }
 
 /* Links */
@@ -1076,8 +1049,8 @@ dt {
 
 dd {
   margin-left: 0;
-  margin-bottom: 11px;
-  margin-bottom:  1.1rem;
+  margin-bottom: 12.5px;
+  margin-bottom:  1.25rem;
 }
 
 /* Tables */
