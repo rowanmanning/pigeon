@@ -1,6 +1,6 @@
 {
     "name": "pigeon",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Pigeon is an OOCSS framework for rapid prototyping and building smart, scalable websites.",
     "keywords": ["css", "framework", "oocss", "sass"],
     "license": "MIT",
