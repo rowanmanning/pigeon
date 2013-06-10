@@ -854,6 +854,7 @@ table {
 
 .quote-attrib {
   font-size: 14px;
+  font-size:  1.4rem;
   font-style: italic;
 }
 .quote-attrib:before {
@@ -873,6 +874,7 @@ table {
  */
 .smallprint, figcaption, small, sub, sup {
   font-size: 14px;
+  font-size:  1.4rem;
 }
 
 /*
@@ -952,6 +954,7 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
+  font-size:  1.7rem;
   color: #333333;
 }
 
@@ -969,26 +972,32 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
 
 h6, .h6 {
   font-size: 19px;
+  font-size:  1.9rem;
 }
 
 h5, .h5 {
   font-size: 22px;
+  font-size:  2.2rem;
 }
 
 h4, .h4 {
   font-size: 26px;
+  font-size:  2.6rem;
 }
 
 h3, .h3 {
   font-size: 31px;
+  font-size:  3.1rem;
 }
 
 h2, .h2 {
   font-size: 37px;
+  font-size:  3.7rem;
 }
 
 h1, .h1 {
   font-size: 44px;
+  font-size:  4.4rem;
 }
 
 /* Links */

@@ -6,7 +6,7 @@ html {
 }
 body {
     font-family: $pigeon-type-face;
-    font-size: $pigeon-type-size;
+    @include rem(font-size, $pigeon-type-size);
     color: $pigeon-type-color;
 }
 
@@ -28,27 +28,27 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
 }
 
 h6, .h6 {
-    font-size: $pigeon-type-size-6;
+    @include rem(font-size, $pigeon-type-size-6);
 }
 
 h5, .h5 {
-    font-size: $pigeon-type-size-5;
+    @include rem(font-size, $pigeon-type-size-5);
 }
 
 h4, .h4 {
-    font-size: $pigeon-type-size-4;
+    @include rem(font-size, $pigeon-type-size-4);
 }
 
 h3, .h3 {
-    font-size: $pigeon-type-size-3;
+    @include rem(font-size, $pigeon-type-size-3);
 }
 
 h2, .h2 {
-    font-size: $pigeon-type-size-2;
+    @include rem(font-size, $pigeon-type-size-2);
 }
 
 h1, .h1 {
-    font-size: $pigeon-type-size-1;
+    @include rem(font-size, $pigeon-type-size-1);
 }
 
 

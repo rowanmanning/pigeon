@@ -11,5 +11,5 @@
  *     <p class="smallprint"> ... </p>
  */
 .smallprint {
-    font-size: $pigeon-type-size-small;
+    @include rem(font-size, $pigeon-type-size-small)
 }
