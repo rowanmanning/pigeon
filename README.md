@@ -4,7 +4,7 @@ Pigeon
 
 Pigeon is an OOCSS framework for rapid prototyping and building smart, scalable websites.
 
-**Current Version:** *1.2.3*  
+**Current Version:** *1.2.4*  
 **Browser Support:** *Android Browser 2.2–4.2, Firefox 3.6, Firefox 4–16, Google Chrome 14–23, Internet Explorer 7–10, Mobile Safari iOS 4–6, Opera 12.10, Safari 5–6*
 
 ![Pigeon][logo]
