@@ -7,6 +7,7 @@ html {
 body {
     font-family: $pigeon-type-face;
     @include rem(font-size, $pigeon-type-size);
+    @include rem(line-height, $pigeon-type-line-height);
     color: $pigeon-type-color;
 }
 
@@ -29,26 +30,32 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
 
 h6, .h6 {
     @include rem(font-size, $pigeon-type-size-6);
+    @include rem(line-height, $pigeon-type-line-height-6);
 }
 
 h5, .h5 {
     @include rem(font-size, $pigeon-type-size-5);
+    @include rem(line-height, $pigeon-type-line-height-5);
 }
 
 h4, .h4 {
     @include rem(font-size, $pigeon-type-size-4);
+    @include rem(line-height, $pigeon-type-line-height-4);
 }
 
 h3, .h3 {
     @include rem(font-size, $pigeon-type-size-3);
+    @include rem(line-height, $pigeon-type-line-height-3);
 }
 
 h2, .h2 {
     @include rem(font-size, $pigeon-type-size-2);
+    @include rem(line-height, $pigeon-type-line-height-2);
 }
 
 h1, .h1 {
     @include rem(font-size, $pigeon-type-size-1);
+    @include rem(line-height, $pigeon-type-line-height-1);
 }
 
 
