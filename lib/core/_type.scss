@@ -6,8 +6,8 @@ html {
 }
 body {
     font-family: $pigeon-type-face;
-    @include rem(font-size, $pigeon-type-size);
-    @include rem(line-height, $pigeon-type-line-height);
+    font-size: $pigeon-type-size;
+    line-height: $pigeon-type-line-height;
     color: $pigeon-type-color;
 }
 
