@@ -1,6 +1,6 @@
 [submodule "style/_source/vendor/rowanmanning/pigeon"]
 	path = style/_source/vendor/rowanmanning/pigeon
-	url = git://github.com/rowanmanning/pigeon.git
+	url = https://github.com/rowanmanning/pigeon.git
 [submodule "style/_source/vendor/rowanmanning/frag"]
 	path = style/_source/vendor/rowanmanning/frag
-	url = git://github.com/rowanmanning/frag.git
+	url = https://github.com/rowanmanning/frag.git

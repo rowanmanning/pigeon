@@ -2,4 +2,4 @@
 Pigeon Website
 ==============
 
-The source code of http://pigeoncss.com/
+The source code of https://rowanmanning.github.io/pigeon
